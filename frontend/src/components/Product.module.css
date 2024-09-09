@@ -1,0 +1,37 @@
+.product-image {
+  min-width: 250px;
+}
+
+.image {
+  transition: all 0.5s ease;
+  height: 250px;
+  object-fit: contain;
+}
+
+.product-image:hover .image {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .product-image {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-image {
+    min-width: 200px;
+  }
+  .image {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .product-image {
+    min-width: 300px;
+  }
+  .image {
+    height: 300px;
+  }
+}
