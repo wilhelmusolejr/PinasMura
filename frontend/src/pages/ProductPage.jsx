@@ -2,6 +2,9 @@ import Navigator from "../components/Navigator";
 
 import product from "../assets/sweater1.png";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
+import ProductColorIndicator from "../components/ProductColorIndicator";
+import Heading from "../components/Heading";
 
 export default function ProductPage() {
   return (
@@ -14,30 +17,27 @@ export default function ProductPage() {
             <img src={product} alt="" />
           </div>
           <div className="product my-5 md:w-5/12">
-            <h2 className="text-4xl font-bold md:pb-5 md:text-6xl">Sweater</h2>
+            <Heading className="md:pb-5">Sweater</Heading>
+
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               dolores ab quam, dignissimos molestias quis quasi porro hic
               voluptas iusto!
             </p>
 
-            <div className="my-5 flex flex-col gap-3">
+            <div className="my-5 flex flex-col gap-2">
               <div className="flex gap-1">
                 <p>Selected color:</p>
                 <p>Light Quartz Gray</p>
               </div>
               <div className="flex gap-2">
-                <div className="h-7 w-7 rounded-full bg-orange-500"></div>
-                <div className="h-7 w-7 rounded-full bg-red-500"></div>
-                <div className="h-7 w-7 rounded-full bg-blue-500"></div>
+                <ProductColorIndicator className="bg-orange-500" size="7" />
+                <ProductColorIndicator className="bg-red-500" size="7" />
+                <ProductColorIndicator className="bg-blue-500" size="7" />
               </div>
             </div>
 
-            <a href="/cart">
-              <button className="my-10 w-full rounded-3xl bg-orange-500 py-5 text-white">
-                Add to cart
-              </button>
-            </a>
+            <Button className="my-5">Add to cart</Button>
           </div>
         </div>
       </section>

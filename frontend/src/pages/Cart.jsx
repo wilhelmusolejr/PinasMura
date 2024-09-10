@@ -2,6 +2,8 @@ import Navigator from "../components/Navigator";
 import Footer from "../components/Footer";
 
 import CartProduct from "../components/CartProduct";
+import Heading from "../components/Heading";
+import Button from "../components/Button";
 
 export default function Cart() {
   return (
@@ -9,7 +11,7 @@ export default function Cart() {
       <Navigator />
 
       <div className="container mx-auto mt-32 p-5 md:mt-40">
-        <h1 className="text-4xl font-bold md:pb-5 md:text-6xl">Your cart</h1>
+        <Heading className="md:pb-5">Your cart</Heading>
       </div>
 
       <section className="container mx-auto p-5">
@@ -37,11 +39,7 @@ export default function Cart() {
               <p className="text-xl">₱ 100,000.00</p>
             </div>
 
-            <a href="/cart/product">
-              <button className="my-5 w-full rounded-3xl bg-orange-500 py-5 text-white">
-                Go To Checkout
-              </button>
-            </a>
+            <Button className="my-5 w-full">Go To Checkout</Button>
           </div>
         </div>
       </section>

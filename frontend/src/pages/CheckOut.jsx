@@ -1,6 +1,8 @@
 import Navigator from "../components/Navigator";
 import Footer from "../components/Footer";
 import LabelAndInput from "../components/LabelAndInput";
+import Heading from "../components/Heading";
+import Button from "../components/Button";
 
 export default function CheckOut() {
   return (
@@ -8,13 +10,13 @@ export default function CheckOut() {
       <Navigator />
 
       <section className="container mx-auto mt-40 px-5">
-        <h1 className="text-4xl font-bold md:pb-5 md:text-6xl">Checkout</h1>
+        <Heading className="md:pb-5">Checkout</Heading>
       </section>
 
       <section className="container mx-auto my-10 px-5">
         <form className="mx-auto max-w-sm">
-          <LabelAndInput id="FullName" label="Full name" />
-          <LabelAndInput id="address" label="Full address" />
+          <LabelAndInput id="FullName" label="Name" />
+          <LabelAndInput id="address" label="Address" />
 
           <p className="my-5 text-right">10 items</p>
 
@@ -25,11 +27,7 @@ export default function CheckOut() {
               <p className="text-xl">₱ 100,000.00</p>
             </div>
 
-            <a href="/order">
-              <button className="my-5 w-full rounded-3xl bg-orange-500 py-5 text-white">
-                Go To Checkout
-              </button>
-            </a>
+            <Button className="my-10 w-full">Go To Checkout</Button>
           </div>
         </form>
       </section>

@@ -5,6 +5,7 @@ import ProductList from "../components/ProductList";
 import Product from "../components/Product";
 import ProductSlider from "../components/ProductSlider";
 import Footer from "../components/Footer";
+import Heading from "../components/Heading";
 
 export default function Home() {
   document.title = "Home | PinasMura";
@@ -14,9 +15,8 @@ export default function Home() {
       <Navigator />
 
       <header className="container mx-auto mb-10 mt-32 flex min-h-60 flex-col justify-center px-5">
-        <h1 className="pb-2 text-4xl font-bold md:pb-5 md:text-6xl">
-          Get Inspired
-        </h1>
+        <Heading className="pb-2 md:pb-5">Get Inspired</Heading>
+
         <p className="w-full text-base font-medium md:w-4/5 lg:w-3/5">
           {`Browsing for your next long-haul trip, everyday journey, or just fancy
         a look at what's new? From community favourites to about-to-sell-out
