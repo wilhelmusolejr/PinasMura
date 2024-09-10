@@ -5,6 +5,7 @@ import ProductList from "../components/ProductList";
 import Product from "../components/Product";
 import ProductSlider from "../components/ProductSlider";
 import Footer from "../components/Footer";
+import Loader from "../components/Loader";
 import Heading from "../components/Heading";
 import { useEffect, useState } from "react";
 
@@ -18,16 +19,18 @@ export default function Home() {
   const [error, setError] = useState(null);
 
   let clothes = products?.filter((product) => product.category === "clothing");
-  let edible = products?.filter((product) => product.category === "edible");
+  let clothes_set_1 = clothes?.slice(0, 4);
+  let clothes_set_2 = clothes?.slice(4, 8);
 
-  console.log(clothes);
-  console.log(edible);
+  let edible = products?.filter((product) => product.category === "edible");
+  let edible_set_1 = edible?.slice(0, 4);
+  let edible_set_2 = edible?.slice(4, 8);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch("http://localhost:3000/products");
+        const response = await fetch(`${URL}products`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");
@@ -93,46 +96,50 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="container mx-auto my-10 px-5">
-        <ProductList>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-        </ProductList>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <section className="container mx-auto my-10 px-5">
+            {/* products - 4 */}
+            <ProductList>
+              {clothes_set_1.map((product) => (
+                <Product key={product.id} product={product} />
+              ))}
+            </ProductList>
 
-        <ProductList>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-        </ProductList>
-      </section>
+            {/* products - 4 */}
+            <ProductList>
+              {clothes_set_2.map((product) => (
+                <Product key={product.id} product={product} />
+              ))}
+            </ProductList>
+          </section>
 
-      <section className="container mx-auto my-40 px-5">
-        <div className="flex flex-wrap gap-3 md:flex-nowrap lg:gap-5">
-          {/* product slider */}
-          <ProductSlider />
-          {/* product slider */}
-          <ProductSlider />
-        </div>
-      </section>
+          <section className="container mx-auto my-40 px-5">
+            <div className="flex flex-wrap gap-3 md:flex-nowrap lg:gap-5">
+              {/* product slider */}
+              <ProductSlider />
+              {/* product slider */}
+              <ProductSlider />
+            </div>
+          </section>
 
-      <section className="container mx-auto my-10 px-5">
-        <ProductList>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-        </ProductList>
+          <section className="container mx-auto my-10 px-5">
+            <ProductList>
+              {edible_set_1.map((product) => (
+                <Product key={product.id} product={product} />
+              ))}
+            </ProductList>
 
-        <ProductList>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-        </ProductList>
-      </section>
+            <ProductList>
+              {edible_set_2.map((product) => (
+                <Product key={product.id} product={product} />
+              ))}
+            </ProductList>
+          </section>
+        </>
+      )}
 
       <Footer />
     </>

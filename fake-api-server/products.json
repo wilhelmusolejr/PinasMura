@@ -103,7 +103,7 @@
       "category": "clothing",
       "options": {
         "sizes": ["S", "M", "L"],
-        "colors": ["white", "light blue", "grey"]
+        "colors": ["white", "orange", "grey"]
       },
       "price": {
         "amount": 900
