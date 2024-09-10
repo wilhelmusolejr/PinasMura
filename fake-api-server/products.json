@@ -1,0 +1,252 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Basic T-Shirt",
+      "description": "A comfortable cotton T-shirt available in various colors.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["red", "blue", "green", "black"]
+      },
+      "price": {
+        "amount": 250
+      },
+      "image": "https://via.placeholder.com/150?text=Basic+T-Shirt",
+      "relatedProducts": [2, 3, 5, 7],
+      "rate": 4.2
+    },
+    {
+      "id": 2,
+      "name": "Slim Fit Jeans",
+      "description": "Stylish slim fit jeans with a modern design.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["M", "L", "XL"],
+        "colors": ["blue", "dark blue"]
+      },
+      "price": {
+        "amount": 1200
+      },
+      "image": "https://via.placeholder.com/150?text=Slim+Fit+Jeans",
+      "relatedProducts": [1, 4, 6, 8],
+      "rate": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Summer Dress",
+      "description": "A light and breezy summer dress perfect for the beach.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["S", "M", "L"],
+        "colors": ["yellow", "pink", "blue"]
+      },
+      "price": {
+        "amount": 950
+      },
+      "image": "https://via.placeholder.com/150?text=Summer+Dress",
+      "relatedProducts": [1, 5, 7, 8],
+      "rate": 4.7
+    },
+    {
+      "id": 4,
+      "name": "Denim Jacket",
+      "description": "A classic denim jacket with a versatile style.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["S", "M", "L"],
+        "colors": ["blue", "black"]
+      },
+      "price": {
+        "amount": 1400
+      },
+      "image": "https://via.placeholder.com/150?text=Denim+Jacket",
+      "relatedProducts": [2, 6, 8, 1],
+      "rate": 4.3
+    },
+    {
+      "id": 5,
+      "name": "Polo Shirt",
+      "description": "A polo shirt made from high-quality fabric.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["M", "L", "XL"],
+        "colors": ["white", "grey", "navy"]
+      },
+      "price": {
+        "amount": 600
+      },
+      "image": "https://via.placeholder.com/150?text=Polo+Shirt",
+      "relatedProducts": [1, 3, 6, 8],
+      "rate": 4.0
+    },
+    {
+      "id": 6,
+      "name": "Sport Shorts",
+      "description": "Comfortable sport shorts suitable for various activities.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["S", "M", "L"],
+        "colors": ["black", "grey", "red"]
+      },
+      "price": {
+        "amount": 700
+      },
+      "image": "https://via.placeholder.com/150?text=Sport+Shorts",
+      "relatedProducts": [2, 4, 7, 8],
+      "rate": 4.1
+    },
+    {
+      "id": 7,
+      "name": "Button-Up Shirt",
+      "description": "A formal button-up shirt suitable for business occasions.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["S", "M", "L"],
+        "colors": ["white", "light blue", "grey"]
+      },
+      "price": {
+        "amount": 900
+      },
+      "image": "https://via.placeholder.com/150?text=Button-Up+Shirt",
+      "relatedProducts": [1, 3, 4, 5],
+      "rate": 4.4
+    },
+    {
+      "id": 8,
+      "name": "Track Suit",
+      "description": "A cozy track suit ideal for workouts or casual wear.",
+      "category": "clothing",
+      "options": {
+        "sizes": ["M", "L", "XL"],
+        "colors": ["black", "grey", "blue"]
+      },
+      "price": {
+        "amount": 1600
+      },
+      "image": "https://via.placeholder.com/150?text=Track+Suit",
+      "relatedProducts": [2, 4, 5, 6],
+      "rate": 4.6
+    },
+    {
+      "id": 9,
+      "name": "Dried Mango",
+      "description": "A popular Filipino snack made from sweet, dried mango slices.",
+      "category": "edible",
+      "options": {
+        "flavors": ["sweet", "tangy"]
+      },
+      "price": {
+        "amount": 150
+      },
+      "image": "https://via.placeholder.com/150?text=Dried+Mango",
+      "relatedProducts": [10, 11, 12, 13],
+      "rate": 4.8
+    },
+    {
+      "id": 10,
+      "name": "Bagoong",
+      "description": "A fermented shrimp paste often used as a salty condiment in Filipino dishes.",
+      "category": "edible",
+      "options": {
+        "flavors": ["salty", "umami"]
+      },
+      "price": {
+        "amount": 80
+      },
+      "image": "https://via.placeholder.com/150?text=Bagoong",
+      "relatedProducts": [9, 12, 14, 16],
+      "rate": 4.3
+    },
+    {
+      "id": 11,
+      "name": "Banana Chips",
+      "description": "Crispy and sweet banana chips, perfect for snacking.",
+      "category": "edible",
+      "options": {
+        "flavors": ["sweet", "honey-glazed"]
+      },
+      "price": {
+        "amount": 100
+      },
+      "image": "https://via.placeholder.com/150?text=Banana+Chips",
+      "relatedProducts": [9, 12, 13, 15],
+      "rate": 4.7
+    },
+    {
+      "id": 12,
+      "name": "Adobo Mix",
+      "description": "A ready-to-use mix for making the classic Filipino Adobo dish.",
+      "category": "edible",
+      "options": {
+        "flavors": ["original", "spicy"]
+      },
+      "price": {
+        "amount": 50
+      },
+      "image": "https://via.placeholder.com/150?text=Adobo+Mix",
+      "relatedProducts": [9, 10, 11, 14],
+      "rate": 4.5
+    },
+    {
+      "id": 13,
+      "name": "Longganisa",
+      "description": "A sweet and garlicky Filipino sausage made from pork.",
+      "category": "edible",
+      "options": {
+        "flavors": ["sweet", "garlicky"]
+      },
+      "price": {
+        "amount": 200
+      },
+      "image": "https://via.placeholder.com/150?text=Longganisa",
+      "relatedProducts": [9, 11, 15, 16],
+      "rate": 4.9
+    },
+    {
+      "id": 14,
+      "name": "Tuyo",
+      "description": "Sun-dried salted fish, commonly eaten with rice and vinegar.",
+      "category": "edible",
+      "options": {
+        "flavors": ["salty", "smoky"]
+      },
+      "price": {
+        "amount": 60
+      },
+      "image": "https://via.placeholder.com/150?text=Tuyo",
+      "relatedProducts": [10, 12, 15, 16],
+      "rate": 4.4
+    },
+    {
+      "id": 15,
+      "name": "Sinigang Mix",
+      "description": "A sour tamarind mix used to prepare the traditional Sinigang soup.",
+      "category": "edible",
+      "options": {
+        "flavors": ["sour", "mild"]
+      },
+      "price": {
+        "amount": 45
+      },
+      "image": "https://via.placeholder.com/150?text=Sinigang+Mix",
+      "relatedProducts": [11, 13, 14, 16],
+      "rate": 4.6
+    },
+    {
+      "id": 16,
+      "name": "Chicharon",
+      "description": "Crunchy pork skin snack, seasoned and deep-fried.",
+      "category": "edible",
+      "options": {
+        "flavors": ["original", "spicy"]
+      },
+      "price": {
+        "amount": 120
+      },
+      "image": "https://via.placeholder.com/150?text=Chicharon",
+      "relatedProducts": [10, 13, 14, 15],
+      "rate": 4.8
+    }
+  ]
+}

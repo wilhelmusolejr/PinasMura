@@ -4,7 +4,23 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Product.module.css";
 
-import product from "../assets/sweater1.png";
+import product1 from "../assets/product1.png";
+import product2 from "../assets/product2.png";
+import product3 from "../assets/product3.png";
+import product4 from "../assets/product4.png";
+import product5 from "../assets/product5.png";
+import product6 from "../assets/product6.png";
+import product7 from "../assets/product7.png";
+import product8 from "../assets/product8.png";
+
+import clothe1 from "../assets/clothe1.png";
+import clothe2 from "../assets/clothe2.png";
+import clothe3 from "../assets/clothe3.png";
+import clothe4 from "../assets/clothe4.png";
+import clothe5 from "../assets/clothe5.png";
+import clothe6 from "../assets/clothe6.png";
+import clothe7 from "../assets/clothe7.png";
+import clothe8 from "../assets/clothe8.png";
 
 export default function Product() {
   const tailwindColors = [
@@ -38,7 +54,24 @@ export default function Product() {
     "tite",
   ];
 
-  const productImages = [product];
+  const productImages = [
+    product1,
+    product2,
+    product3,
+    product4,
+    product5,
+    product6,
+    product7,
+    product8,
+    clothe1,
+    clothe2,
+    clothe3,
+    clothe4,
+    clothe5,
+    clothe6,
+    clothe7,
+    clothe8,
+  ];
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   let randomClothingItem = Math.floor(Math.random() * clothingItems.length);

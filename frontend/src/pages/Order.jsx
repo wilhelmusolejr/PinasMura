@@ -1,7 +1,8 @@
 import Footer from "../components/Footer";
 import Navigator from "../components/Navigator";
 
-import product from "../assets/sweater1.png";
+import product from "../assets/clothe8.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons"; // Regular icons
 import Heading from "../components/Heading";

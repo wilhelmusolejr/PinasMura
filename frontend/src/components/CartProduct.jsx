@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import product from "../assets/sweater1.png";
+import product from "../assets/clothe8.png";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function CartProduct() {

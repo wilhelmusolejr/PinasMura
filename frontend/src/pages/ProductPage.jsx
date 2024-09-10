@@ -1,10 +1,13 @@
-import Navigator from "../components/Navigator";
+// asset
+import product from "../assets/clothe8.png";
 
-import product from "../assets/sweater1.png";
+import Navigator from "../components/Navigator";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 import ProductColorIndicator from "../components/ProductColorIndicator";
 import Heading from "../components/Heading";
+import ProductList from "../components/ProductList";
+import Product from "../components/Product";
 
 export default function ProductPage() {
   return (
@@ -40,6 +43,19 @@ export default function ProductPage() {
             <Button className="my-5">Add to cart</Button>
           </div>
         </div>
+      </section>
+
+      <div className="container mx-auto mt-32 p-5 md:mt-40">
+        <h2 className="text-2xl font-bold md:text-4xl">Related products</h2>
+      </div>
+
+      <section className="container mx-auto my-10 px-5">
+        <ProductList>
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+        </ProductList>
       </section>
 
       <Footer />
