@@ -12,6 +12,6 @@ export default function ProductList({ children }) {
   );
 }
 
-ProductList.prototype = {
+ProductList.propTypes = {
   children: PropTypes.node, // Validate children as a node
 };

@@ -8,12 +8,12 @@ export default function ProductPage() {
     <>
       <Navigator />
 
-      <section className="container mx-auto mt-32 p-5">
-        <div className="flex flex-col">
-          <div className="product-image w-full rounded-xl bg-gray-100 p-10 md:w-6/12">
+      <section className="container mx-auto mt-40 p-5">
+        <div className="flex flex-col justify-center gap-3 md:flex-row md:gap-5">
+          <div className="product-image w-full rounded-xl bg-gray-100 p-10 md:w-5/12">
             <img src={product} alt="" />
           </div>
-          <div className="product my-5">
+          <div className="product my-5 md:w-5/12">
             <h2 className="text-4xl font-bold md:pb-5 md:text-6xl">Sweater</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
@@ -22,14 +22,14 @@ export default function ProductPage() {
             </p>
 
             <div className="my-5 flex flex-col gap-3">
-              <div className="flex">
+              <div className="flex gap-1">
                 <p>Selected color:</p>
                 <p>Light Quartz Gray</p>
               </div>
               <div className="flex gap-2">
-                <div className="h-10 w-10 rounded-full bg-orange-500"></div>
-                <div className="h-10 w-10 rounded-full bg-red-500"></div>
-                <div className="h-10 w-10 rounded-full bg-blue-500"></div>
+                <div className="h-7 w-7 rounded-full bg-orange-500"></div>
+                <div className="h-7 w-7 rounded-full bg-red-500"></div>
+                <div className="h-7 w-7 rounded-full bg-blue-500"></div>
               </div>
             </div>
 

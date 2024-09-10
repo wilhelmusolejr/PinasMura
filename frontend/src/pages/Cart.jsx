@@ -9,7 +9,7 @@ export default function Cart() {
       <Navigator />
 
       <div className="container mx-auto mt-32 p-5 md:mt-40">
-        <h2 className="text-4xl font-bold md:pb-5 md:text-6xl">Your cart</h2>
+        <h1 className="text-4xl font-bold md:pb-5 md:text-6xl">Your cart</h1>
       </div>
 
       <section className="container mx-auto p-5">
@@ -31,14 +31,17 @@ export default function Cart() {
 
           {/* cart info */}
           <div className="w-full md:w-7/12 lg:w-4/12 xl:w-3/12">
-            <h3 className="mt-5 text-lg font-medium">Subtotal</h3>
+            <h2 className="mt-5 text-lg font-medium">Subtotal</h2>
             <div className="mt-2 flex justify-between">
               <p className="text-lg font-medium">Total:</p>
               <p className="text-xl">₱ 100,000.00</p>
             </div>
-            <button className="my-5 w-full rounded-3xl bg-orange-500 py-5 text-white">
-              Go To Checkout
-            </button>
+
+            <a href="/cart/product">
+              <button className="my-5 w-full rounded-3xl bg-orange-500 py-5 text-white">
+                Go To Checkout
+              </button>
+            </a>
           </div>
         </div>
       </section>
