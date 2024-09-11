@@ -1,5 +1,12 @@
-// asset
+// library
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
+// some library
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+// components
 import Navigator from "../components/Navigator";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
@@ -7,14 +14,10 @@ import ProductColorIndicator from "../components/ProductColorIndicator";
 import Heading from "../components/Heading";
 import ProductList from "../components/ProductList";
 import Product from "../components/Product";
-import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
-import { useParams } from "react-router-dom";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-let URL = `http://127.0.0.1:8000/api/`;
-let IMG_URL = `http://127.0.0.1:8000/storage/`;
+// config
+import { API_URL, IMG_URL } from "../config.jsx";
 
 export default function ProductPage() {
   const { id } = useParams();
@@ -27,16 +30,13 @@ export default function ProductPage() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${URL}products/${id}`);
+        const response = await fetch(`${API_URL}/products/${id}`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
         const data = await response.json();
         setProduct(data);
-
-        console.log(id);
-        console.log(data);
       } catch (error) {
         setError(error.message);
       } finally {
@@ -48,7 +48,6 @@ export default function ProductPage() {
   }, [id]);
 
   let four_products = product?.related_products;
-  console.log(four_products);
 
   return (
     <>
@@ -61,7 +60,7 @@ export default function ProductPage() {
           <section className="container mx-auto mt-40 p-5">
             <div className="flex flex-col justify-center gap-3 md:flex-row md:gap-5">
               <div className="product-image flex w-full items-center justify-center rounded-xl bg-gray-100 p-10 md:w-5/12">
-                <img src={IMG_URL + product.image} alt="" />
+                <img src={IMG_URL + "/" + product.image} alt="" />
               </div>
               <div className="product my-5 md:w-5/12">
                 <div className="mb-10 flex items-center gap-3">

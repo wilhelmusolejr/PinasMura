@@ -1,15 +1,21 @@
+// library
+import { useEffect, useState } from "react";
+
+// some library
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Navigator from "../components/Navigator";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+
+// components
 import ProductList from "../components/ProductList";
+import Navigator from "../components/Navigator";
 import Product from "../components/Product";
 import ProductSlider from "../components/ProductSlider";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 import Heading from "../components/Heading";
-import { useEffect, useState } from "react";
 
-let URL = `http://127.0.0.1:8000/api/`;
+// config
+import { API_URL } from "../config.jsx";
 
 export default function Home() {
   document.title = "Home | PinasMura";
@@ -30,15 +36,13 @@ export default function Home() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${URL}products`);
+        const response = await fetch(`${API_URL}/products`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
         const data = await response.json();
         setProducts(data);
-
-        console.log(data);
       } catch (error) {
         setError(error.message);
       } finally {

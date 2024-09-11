@@ -1,12 +1,18 @@
+// library
 import PropTypes from "prop-types";
 
+// some library
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ProductColorIndicator from "./ProductColorIndicator";
 import { faPlus, faStar } from "@fortawesome/free-solid-svg-icons";
 
+// components
+import ProductColorIndicator from "./ProductColorIndicator";
+
+// style
 import styles from "./Product.module.css";
 
-let URL = `http://127.0.0.1:8000/storage/`;
+// config
+import { IMG_URL } from "../config.jsx";
 
 export default function Product({ product }) {
   function stringCutter(str, maxLength) {
@@ -28,7 +34,10 @@ export default function Product({ product }) {
         <div
           className={`${styles["product-image"]} group relative flex items-center justify-center rounded-xl bg-gray-100 p-10`}
         >
-          <img src={URL + product.image} className={`${styles["image"]}`} />
+          <img
+            src={IMG_URL + "/" + product.image}
+            className={`${styles["image"]}`}
+          />
           <div className="product-available-color absolute right-5 top-5 flex gap-2">
             {product.options.colors &&
               product.options.colors.map((color, index) => (
