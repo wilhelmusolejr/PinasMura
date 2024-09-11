@@ -9,7 +9,7 @@ import Loader from "../components/Loader";
 import Heading from "../components/Heading";
 import { useEffect, useState } from "react";
 
-let URL = `http://localhost:3000/`;
+let URL = `http://127.0.0.1:8000/api/`;
 
 export default function Home() {
   document.title = "Home | PinasMura";
@@ -37,6 +37,8 @@ export default function Home() {
         }
         const data = await response.json();
         setProducts(data);
+
+        console.log(data);
       } catch (error) {
         setError(error.message);
       } finally {

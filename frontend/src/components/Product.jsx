@@ -2,9 +2,11 @@ import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProductColorIndicator from "./ProductColorIndicator";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faStar } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Product.module.css";
+
+let URL = `http://127.0.0.1:8000/storage/`;
 
 export default function Product({ product }) {
   function stringCutter(str, maxLength) {
@@ -26,13 +28,13 @@ export default function Product({ product }) {
         <div
           className={`${styles["product-image"]} group relative flex items-center justify-center rounded-xl bg-gray-100 p-10`}
         >
-          <img src={product.image} className={`${styles["image"]}`} />
+          <img src={URL + product.image} className={`${styles["image"]}`} />
           <div className="product-available-color absolute right-5 top-5 flex gap-2">
             {product.options.colors &&
               product.options.colors.map((color, index) => (
                 <ProductColorIndicator
                   key={index}
-                  className={`bg-${color}-500`}
+                  className={`bg-${color.color}-500`}
                 />
               ))}
           </div>
@@ -50,9 +52,15 @@ export default function Product({ product }) {
       </a>
       {/* info */}
       <div className="product-info flex flex-col pt-4">
-        <h2 className="text-xl font-semibold">{product.name}</h2>
+        <div className="flex justify-between">
+          <h2 className="text-xl font-semibold">{product.name}</h2>
+          <div className="flex items-center justify-center gap-1 text-sm">
+            <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+            <p>{product.rate}</p>
+          </div>
+        </div>
         <p className="w-11/12 pb-2 text-xs">{product.description}</p>
-        <p className="text-base font-normal">₱ {product.price.amount}</p>
+        <p className="text-base font-normal">₱ {product.price}</p>
       </div>
     </div>
   );
