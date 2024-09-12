@@ -15,46 +15,13 @@ export default function CheckOut() {
   const [address, setAddress] = useState("");
   const navigate = useNavigate(); // Use useNavigate hook instead of Navigate component
 
-  const items = useSelector((state) => state.cart.items);
+  const { items } = useSelector((state) => state.cart);
 
-  const [loading, setLoading] = useState(true);
-  const [products, setProducts] = useState(null);
-  const [error, setError] = useState(null);
-
-  const totalPrice = products?.reduce((total, product, index) => {
-    return total + product.price * items[index].quantity;
+  const totalPrice = items?.reduce((total, item) => {
+    return total + item.price * item.quantity;
   }, 0);
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        setLoading(true);
-
-        const ids = items.map((item) => item.id);
-
-        const response = await fetch(`${API_URL}/products/list`, {
-          method: "POST", // Use POST to send data
-          headers: {
-            "Content-Type": "application/json", // Set the content type to JSON
-          },
-          body: JSON.stringify({ ids }), // Send the array of IDs in the body of the request
-        });
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch products");
-        }
-
-        const data = await response.json();
-        setProducts(data);
-      } catch (error) {
-        setError(error.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, [items.length]);
+  console.log(items);
 
   function handleSubmit(e) {
     e.preventDefault();
