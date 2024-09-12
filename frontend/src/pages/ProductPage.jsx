@@ -21,7 +21,7 @@ import { API_URL, IMG_URL } from "../config.jsx";
 import { useDispatch } from "react-redux";
 
 // redux
-import { addItem } from "../redux/CartSlice";
+import { addToCartAsync } from "../redux/CartSlice";
 
 export default function ProductPage() {
   const dispatch = useDispatch();
@@ -31,7 +31,6 @@ export default function ProductPage() {
 
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -45,7 +44,7 @@ export default function ProductPage() {
         const data = await response.json();
         setProduct(data);
       } catch (error) {
-        setError(error.message);
+        console.log(error);
       } finally {
         setLoading(false);
       }
@@ -56,8 +55,8 @@ export default function ProductPage() {
 
   let four_products = product?.related_products;
 
-  function addToCart(id) {
-    dispatch(addItem({ id: id }));
+  function addToCart(data) {
+    dispatch(addToCartAsync(data));
     navigate("/cart");
   }
 
@@ -120,7 +119,7 @@ export default function ProductPage() {
                 <Button
                   className="my-5"
                   onClick={() => {
-                    addToCart(product.id);
+                    addToCart(product);
                   }}
                 >
                   Add to cart

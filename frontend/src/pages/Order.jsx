@@ -10,9 +10,26 @@ import Confetti from "react-confetti";
 import { useSelector } from "react-redux";
 
 import { IMG_URL } from "../config.jsx";
+import Loader from "../components/Loader.jsx";
 
 export default function Order() {
-  const items = useSelector((state) => state.cart.items);
+  const { items, order_number } = useSelector((state) => state.cart);
+
+  if (!items || !order_number) {
+    return (
+      <>
+        <Navigator />
+
+        <div className="relative min-h-screen">
+          <div className="absolute left-2/4 top-2/4">
+            <Loader />
+          </div>
+        </div>
+
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>
@@ -35,7 +52,7 @@ export default function Order() {
 
         <Heading className="md:pb-5">Thank you for your order!</Heading>
         <p className="my-5">
-          Order #5252 has been submitted. <br />
+          Order #{order_number} has been submitted. <br />
           An email confirmation has been sent to tite@gmail.com.
         </p>
       </section>

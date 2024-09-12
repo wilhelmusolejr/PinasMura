@@ -3,16 +3,20 @@ import Footer from "../components/Footer";
 import LabelAndInput from "../components/LabelAndInput";
 import Heading from "../components/Heading";
 import Button from "../components/Button";
-import { useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 
 // API
-import { API_URL } from "../config.jsx";
 import { useNavigate } from "react-router-dom";
+
+import { submitOrderAsync } from "../redux/CartSlice";
 
 export default function CheckOut() {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
+
+  const dispatch = useDispatch();
+
   const navigate = useNavigate(); // Use useNavigate hook instead of Navigate component
 
   const { items } = useSelector((state) => state.cart);
@@ -21,10 +25,23 @@ export default function CheckOut() {
     return total + item.price * item.quantity;
   }, 0);
 
-  console.log(items);
-
   function handleSubmit(e) {
     e.preventDefault();
+
+    const order = {
+      name: name,
+      address: address,
+      total: totalPrice,
+      products: items.map((item) => {
+        return {
+          id: item.id,
+          price: item.price,
+          quantity: item.quantity,
+        };
+      }),
+    };
+
+    dispatch(submitOrderAsync(order));
     navigate("/order");
   }
 

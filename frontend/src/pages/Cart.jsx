@@ -5,7 +5,7 @@ import CartProduct from "../components/CartProduct";
 import Heading from "../components/Heading";
 import Button from "../components/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { API_URL } from "../config.jsx";
 import { useNavigate } from "react-router-dom";
@@ -28,25 +28,26 @@ export default function Cart() {
     const fetchProducts = async () => {
       try {
         dispatch(setLoading(true));
-        // const ids = items.map((item) => item.id);
-        const ids = [1, 5, 6, 15];
+
+        let user_id = 1;
 
         // fetch products
-        const response = await fetch(`${API_URL}/products/list`, {
+        const response = await fetch(`${API_URL}/cart`, {
           method: "POST", // Use POST to send data
           headers: {
             "Content-Type": "application/json", // Set the content type to JSON
           },
-          body: JSON.stringify({ ids }), // Send the array of IDs in the body of the request
+          body: JSON.stringify({ user_id }), // Send the array of IDs in the body of the request
         });
 
         const data = await response.json();
 
-        for (const product of data) {
-          product.quantity = 1;
-        }
+        // Map through products and set the quantity from cart
+        const productsWithQuantities = data.map(({ product, quantity }) => {
+          return { ...product, quantity };
+        });
 
-        dispatch(setCartItems(data));
+        dispatch(setCartItems({ product: productsWithQuantities }));
       } catch (error) {
         console.log(error);
       } finally {
@@ -55,7 +56,7 @@ export default function Cart() {
     };
 
     fetchProducts();
-  }, [items.length]);
+  }, [dispatch]);
 
   if (loading) {
     return (
@@ -101,7 +102,9 @@ export default function Cart() {
             <Button
               className="my-5 w-full"
               onClick={() => {
-                navigate("/cart/product");
+                if (items.length > 0) {
+                  navigate("/cart/product");
+                }
               }}
             >
               Go To Checkout
