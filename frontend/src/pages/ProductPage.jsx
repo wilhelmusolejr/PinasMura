@@ -1,6 +1,6 @@
 // library
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 // some library
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,8 +18,15 @@ import Loader from "../components/Loader";
 
 // config
 import { API_URL, IMG_URL } from "../config.jsx";
+import { useDispatch } from "react-redux";
+
+// redux
+import { addItem } from "../redux/CartSlice";
 
 export default function ProductPage() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate(); // Use useNavigate hook instead of Navigate component
+
   const { id } = useParams();
 
   const [product, setProduct] = useState(null);
@@ -48,6 +55,11 @@ export default function ProductPage() {
   }, [id]);
 
   let four_products = product?.related_products;
+
+  function addToCart(id) {
+    dispatch(addItem({ id: id }));
+    navigate("/cart");
+  }
 
   return (
     <>
@@ -105,7 +117,14 @@ export default function ProductPage() {
                   </div>
                 </div>
 
-                <Button className="my-5">Add to cart</Button>
+                <Button
+                  className="my-5"
+                  onClick={() => {
+                    addToCart(product.id);
+                  }}
+                >
+                  Add to cart
+                </Button>
               </div>
             </div>
           </section>

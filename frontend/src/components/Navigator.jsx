@@ -7,8 +7,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function Navigator() {
+  const items = useSelector((state) => state.cart.items);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -40,7 +43,7 @@ export default function Navigator() {
           <div className="cart">
             <a href="/cart" className="flex items-center gap-2">
               <FontAwesomeIcon icon={faCartShopping} />
-              Cart 0
+              Cart {items.length > 0 && `(${items.length})`}
             </a>
           </div>
           <div className="account">

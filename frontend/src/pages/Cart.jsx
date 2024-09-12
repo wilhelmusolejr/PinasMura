@@ -4,29 +4,34 @@ import Footer from "../components/Footer";
 import CartProduct from "../components/CartProduct";
 import Heading from "../components/Heading";
 import Button from "../components/Button";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 
 import { API_URL } from "../config.jsx";
+import { useNavigate } from "react-router-dom";
+import Loader from "../components/Loader.jsx";
+
+import { setCartItems, setLoading } from "../redux/CartSlice";
 
 export default function Cart() {
-  const items = useSelector((state) => state.cart.items);
+  // const items = useSelector((state) => state.cart.items);
+  const dispatch = useDispatch();
 
-  const [loading, setLoading] = useState(true);
-  const [products, setProducts] = useState(null);
-  const [error, setError] = useState(null);
+  const { loading, items } = useSelector((state) => state.cart);
+  const navigate = useNavigate(); // Use useNavigate hook instead of Navigate component
 
-  const totalPrice = products?.reduce((total, product, index) => {
-    return total + product.price * items[index].quantity;
+  const totalPrice = items?.reduce((total, item) => {
+    return total + item.price * item.quantity;
   }, 0);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        setLoading(true);
+        dispatch(setLoading(true));
+        // const ids = items.map((item) => item.id);
+        const ids = [1, 5, 6, 15];
 
-        const ids = items.map((item) => item.id);
-
+        // fetch products
         const response = await fetch(`${API_URL}/products/list`, {
           method: "POST", // Use POST to send data
           headers: {
@@ -35,21 +40,38 @@ export default function Cart() {
           body: JSON.stringify({ ids }), // Send the array of IDs in the body of the request
         });
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch products");
+        const data = await response.json();
+
+        for (const product of data) {
+          product.quantity = 1;
         }
 
-        const data = await response.json();
-        setProducts(data);
+        dispatch(setCartItems(data));
       } catch (error) {
-        setError(error.message);
+        console.log(error);
       } finally {
-        setLoading(false);
+        dispatch(setLoading(false));
       }
     };
 
     fetchProducts();
-  }, [items]);
+  }, [items.length]);
+
+  if (loading) {
+    return (
+      <>
+        <Navigator />
+
+        <div className="relative min-h-screen">
+          <div className="absolute left-2/4 top-2/4">
+            <Loader />
+          </div>
+        </div>
+
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>
@@ -63,17 +85,9 @@ export default function Cart() {
         <div className="flex flex-col justify-between gap-3 md:flex-row">
           {/* cart items */}
           <div className="flex w-full flex-wrap gap-5">
-            {products ? (
-              products.map((product, index) => (
-                <CartProduct
-                  key={product.id}
-                  product={product}
-                  item={items[index]}
-                />
-              ))
-            ) : (
-              <h2>EMPTY CART</h2>
-            )}
+            {items.map((item) => (
+              <CartProduct key={item.id} product={item} />
+            ))}
           </div>
 
           {/* cart info */}
@@ -84,7 +98,14 @@ export default function Cart() {
               <p className="text-xl">₱ {totalPrice}</p>
             </div>
 
-            <Button className="my-5 w-full">Go To Checkout</Button>
+            <Button
+              className="my-5 w-full"
+              onClick={() => {
+                navigate("/cart/product");
+              }}
+            >
+              Go To Checkout
+            </Button>
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ export default function LabelAndInput({
   id,
   label,
   placeholder = "",
+  state,
 }) {
   return (
     <div className="mb-5">
@@ -19,6 +20,8 @@ export default function LabelAndInput({
         id={id}
         className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900"
         placeholder={placeholder}
+        value={state[0]}
+        onChange={(e) => state[1](e.target.value)}
         required
       />
     </div>
@@ -30,4 +33,5 @@ LabelAndInput.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
+  state: PropTypes.array.isRequired,
 };

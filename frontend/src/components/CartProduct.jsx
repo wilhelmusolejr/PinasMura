@@ -6,20 +6,46 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 // api
 import { IMG_URL } from "../config";
+import { useDispatch } from "react-redux";
 
-export default function CartProduct({ product, item }) {
+// redux
+import { increaseQuantity, decreaseQuantity } from "../redux/CartSlice";
+
+export default function CartProduct({ product }) {
+  const dispatch = useDispatch();
+
+  function handleIncreaseQuantity(id) {
+    dispatch(increaseQuantity({ id: id }));
+  }
+
+  function handleDecreaseQuantity(id) {
+    dispatch(decreaseQuantity({ id: id }));
+  }
+
   return (
     <div className="product-cart relative flex w-full gap-3 lg:w-5/12">
       <div className="">
-        <a href="/product">
+        <a href={"/product/" + product.id}>
           <div className="product-image rounded-md border bg-gray-100 p-3">
             <img src={IMG_URL + "/" + product.image} alt="" className="h-20" />
           </div>
         </a>
         <div className="flex items-center justify-between p-2">
-          <FontAwesomeIcon icon={faMinus} />
-          <div className="">{item.quantity}</div>
-          <FontAwesomeIcon icon={faPlus} />
+          <FontAwesomeIcon
+            icon={faMinus}
+            className="cursor-pointer"
+            onClick={() => {
+              handleDecreaseQuantity(product.id);
+            }}
+          />
+          <div className="">{product.quantity}</div>
+          <FontAwesomeIcon
+            icon={faPlus}
+            className="cursor-pointer"
+            onClick={() => {
+              handleIncreaseQuantity(product.id);
+            }}
+          />
         </div>
       </div>
       <div className="product-info">
@@ -32,5 +58,4 @@ export default function CartProduct({ product, item }) {
 
 CartProduct.propTypes = {
   product: propTypes.object.isRequired,
-  item: propTypes.object.isRequired,
 };
