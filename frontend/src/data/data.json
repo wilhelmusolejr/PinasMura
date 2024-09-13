@@ -46,6 +46,188 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 2,
+        "name": "Slim Fit Jeans",
+        "description": "Stylish slim fit jeans with a modern design.",
+        "category": "clothing",
+        "price": "1200.00",
+        "rate": "4.5",
+        "image": "clothe2.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 5,
+              "size": "M"
+            },
+            {
+              "id": 6,
+              "size": "L"
+            },
+            {
+              "id": 7,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 5,
+              "color": "blue"
+            },
+            {
+              "id": 6,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 3,
+        "name": "Summer Dress",
+        "description": "A light and breezy summer dress perfect for the beach.",
+        "category": "clothing",
+        "price": "950.00",
+        "rate": "4.7",
+        "image": "clothe3.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 8,
+              "size": "S"
+            },
+            {
+              "id": 9,
+              "size": "M"
+            },
+            {
+              "id": 10,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 7,
+              "color": "yellow"
+            },
+            {
+              "id": 8,
+              "color": "pink"
+            },
+            {
+              "id": 9,
+              "color": "blue"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 5,
+        "name": "Polo Shirt",
+        "description": "A polo shirt made from high-quality fabric.",
+        "category": "clothing",
+        "price": "600.00",
+        "rate": "4.0",
+        "image": "clothe5.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 14,
+              "size": "M"
+            },
+            {
+              "id": 15,
+              "size": "L"
+            },
+            {
+              "id": 16,
+              "size": "XL"
+            },
+            {
+              "id": 17,
+              "size": "S"
+            },
+            {
+              "id": 18,
+              "size": "M"
+            },
+            {
+              "id": 19,
+              "size": "L"
+            },
+            {
+              "id": 20,
+              "size": "S"
+            },
+            {
+              "id": 21,
+              "size": "M"
+            },
+            {
+              "id": 22,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 12,
+              "color": "green"
+            },
+            {
+              "id": 19,
+              "color": "violet"
+            },
+            {
+              "id": 20,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 7,
+        "name": "Button-Up Shirt",
+        "description": "A formal button-up shirt suitable for business occasions.",
+        "category": "clothing",
+        "price": "900.00",
+        "rate": "4.4",
+        "image": "clothe7.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 26,
+              "size": "S"
+            },
+            {
+              "id": 27,
+              "size": "M"
+            },
+            {
+              "id": 28,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 24,
+              "color": "white"
+            },
+            {
+              "id": 25,
+              "color": "orange"
+            },
+            {
+              "id": 26,
+              "color": "grey"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:04:01.000000Z",
     "updated_at": "2024-09-11T01:04:01.000000Z"
   },
@@ -84,6 +266,172 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 1,
+        "name": "Basic T-Shirt",
+        "description": "A comfortable cotton T-shirt available in various colors.",
+        "category": "clothing",
+        "price": "250.00",
+        "rate": "4.2",
+        "image": "clothe1.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 1,
+              "size": "S"
+            },
+            {
+              "id": 2,
+              "size": "M"
+            },
+            {
+              "id": 3,
+              "size": "L"
+            },
+            {
+              "id": 4,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 1,
+              "color": "red"
+            },
+            {
+              "id": 2,
+              "color": "blue"
+            },
+            {
+              "id": 3,
+              "color": "green"
+            },
+            {
+              "id": 4,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 4,
+        "name": "Denim Jacket",
+        "description": "A classic denim jacket with a versatile style.",
+        "category": "clothing",
+        "price": "1400.00",
+        "rate": "4.3",
+        "image": "clothe4.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 11,
+              "size": "S"
+            },
+            {
+              "id": 12,
+              "size": "M"
+            },
+            {
+              "id": 13,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 10,
+              "color": "blue"
+            },
+            {
+              "id": 11,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 6,
+        "name": "Sport Shorts",
+        "description": "Comfortable sport shorts suitable for various activities.",
+        "category": "clothing",
+        "price": "700.00",
+        "rate": "4.1",
+        "image": "clothe6.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 23,
+              "size": "S"
+            },
+            {
+              "id": 24,
+              "size": "M"
+            },
+            {
+              "id": 25,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 21,
+              "color": "black"
+            },
+            {
+              "id": 22,
+              "color": "grey"
+            },
+            {
+              "id": 23,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 8,
+        "name": "Track Suit",
+        "description": "A cozy track suit ideal for workouts or casual wear.",
+        "category": "clothing",
+        "price": "1600.00",
+        "rate": "4.6",
+        "image": "clothe8.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 29,
+              "size": "M"
+            },
+            {
+              "id": 30,
+              "size": "L"
+            },
+            {
+              "id": 31,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 27,
+              "color": "black"
+            },
+            {
+              "id": 28,
+              "color": "grey"
+            },
+            {
+              "id": 29,
+              "color": "blue"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:33:36.000000Z",
     "updated_at": "2024-09-11T01:33:36.000000Z"
   },
@@ -126,6 +474,200 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 1,
+        "name": "Basic T-Shirt",
+        "description": "A comfortable cotton T-shirt available in various colors.",
+        "category": "clothing",
+        "price": "250.00",
+        "rate": "4.2",
+        "image": "clothe1.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 1,
+              "size": "S"
+            },
+            {
+              "id": 2,
+              "size": "M"
+            },
+            {
+              "id": 3,
+              "size": "L"
+            },
+            {
+              "id": 4,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 1,
+              "color": "red"
+            },
+            {
+              "id": 2,
+              "color": "blue"
+            },
+            {
+              "id": 3,
+              "color": "green"
+            },
+            {
+              "id": 4,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 5,
+        "name": "Polo Shirt",
+        "description": "A polo shirt made from high-quality fabric.",
+        "category": "clothing",
+        "price": "600.00",
+        "rate": "4.0",
+        "image": "clothe5.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 14,
+              "size": "M"
+            },
+            {
+              "id": 15,
+              "size": "L"
+            },
+            {
+              "id": 16,
+              "size": "XL"
+            },
+            {
+              "id": 17,
+              "size": "S"
+            },
+            {
+              "id": 18,
+              "size": "M"
+            },
+            {
+              "id": 19,
+              "size": "L"
+            },
+            {
+              "id": 20,
+              "size": "S"
+            },
+            {
+              "id": 21,
+              "size": "M"
+            },
+            {
+              "id": 22,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 12,
+              "color": "green"
+            },
+            {
+              "id": 19,
+              "color": "violet"
+            },
+            {
+              "id": 20,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 7,
+        "name": "Button-Up Shirt",
+        "description": "A formal button-up shirt suitable for business occasions.",
+        "category": "clothing",
+        "price": "900.00",
+        "rate": "4.4",
+        "image": "clothe7.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 26,
+              "size": "S"
+            },
+            {
+              "id": 27,
+              "size": "M"
+            },
+            {
+              "id": 28,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 24,
+              "color": "white"
+            },
+            {
+              "id": 25,
+              "color": "orange"
+            },
+            {
+              "id": 26,
+              "color": "grey"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 8,
+        "name": "Track Suit",
+        "description": "A cozy track suit ideal for workouts or casual wear.",
+        "category": "clothing",
+        "price": "1600.00",
+        "rate": "4.6",
+        "image": "clothe8.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 29,
+              "size": "M"
+            },
+            {
+              "id": 30,
+              "size": "L"
+            },
+            {
+              "id": 31,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 27,
+              "color": "black"
+            },
+            {
+              "id": 28,
+              "color": "grey"
+            },
+            {
+              "id": 29,
+              "color": "blue"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:35:00.000000Z",
     "updated_at": "2024-09-11T01:35:00.000000Z"
   },
@@ -164,6 +706,172 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 2,
+        "name": "Slim Fit Jeans",
+        "description": "Stylish slim fit jeans with a modern design.",
+        "category": "clothing",
+        "price": "1200.00",
+        "rate": "4.5",
+        "image": "clothe2.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 5,
+              "size": "M"
+            },
+            {
+              "id": 6,
+              "size": "L"
+            },
+            {
+              "id": 7,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 5,
+              "color": "blue"
+            },
+            {
+              "id": 6,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 6,
+        "name": "Sport Shorts",
+        "description": "Comfortable sport shorts suitable for various activities.",
+        "category": "clothing",
+        "price": "700.00",
+        "rate": "4.1",
+        "image": "clothe6.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 23,
+              "size": "S"
+            },
+            {
+              "id": 24,
+              "size": "M"
+            },
+            {
+              "id": 25,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 21,
+              "color": "black"
+            },
+            {
+              "id": 22,
+              "color": "grey"
+            },
+            {
+              "id": 23,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 8,
+        "name": "Track Suit",
+        "description": "A cozy track suit ideal for workouts or casual wear.",
+        "category": "clothing",
+        "price": "1600.00",
+        "rate": "4.6",
+        "image": "clothe8.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 29,
+              "size": "M"
+            },
+            {
+              "id": 30,
+              "size": "L"
+            },
+            {
+              "id": 31,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 27,
+              "color": "black"
+            },
+            {
+              "id": 28,
+              "color": "grey"
+            },
+            {
+              "id": 29,
+              "color": "blue"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 1,
+        "name": "Basic T-Shirt",
+        "description": "A comfortable cotton T-shirt available in various colors.",
+        "category": "clothing",
+        "price": "250.00",
+        "rate": "4.2",
+        "image": "clothe1.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 1,
+              "size": "S"
+            },
+            {
+              "id": 2,
+              "size": "M"
+            },
+            {
+              "id": 3,
+              "size": "L"
+            },
+            {
+              "id": 4,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 1,
+              "color": "red"
+            },
+            {
+              "id": 2,
+              "color": "blue"
+            },
+            {
+              "id": 3,
+              "color": "green"
+            },
+            {
+              "id": 4,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:36:34.000000Z",
     "updated_at": "2024-09-11T01:36:34.000000Z"
   },
@@ -230,6 +938,160 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 2,
+        "name": "Slim Fit Jeans",
+        "description": "Stylish slim fit jeans with a modern design.",
+        "category": "clothing",
+        "price": "1200.00",
+        "rate": "4.5",
+        "image": "clothe2.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 5,
+              "size": "M"
+            },
+            {
+              "id": 6,
+              "size": "L"
+            },
+            {
+              "id": 7,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 5,
+              "color": "blue"
+            },
+            {
+              "id": 6,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 4,
+        "name": "Denim Jacket",
+        "description": "A classic denim jacket with a versatile style.",
+        "category": "clothing",
+        "price": "1400.00",
+        "rate": "4.3",
+        "image": "clothe4.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 11,
+              "size": "S"
+            },
+            {
+              "id": 12,
+              "size": "M"
+            },
+            {
+              "id": 13,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 10,
+              "color": "blue"
+            },
+            {
+              "id": 11,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 7,
+        "name": "Button-Up Shirt",
+        "description": "A formal button-up shirt suitable for business occasions.",
+        "category": "clothing",
+        "price": "900.00",
+        "rate": "4.4",
+        "image": "clothe7.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 26,
+              "size": "S"
+            },
+            {
+              "id": 27,
+              "size": "M"
+            },
+            {
+              "id": 28,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 24,
+              "color": "white"
+            },
+            {
+              "id": 25,
+              "color": "orange"
+            },
+            {
+              "id": 26,
+              "color": "grey"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 8,
+        "name": "Track Suit",
+        "description": "A cozy track suit ideal for workouts or casual wear.",
+        "category": "clothing",
+        "price": "1600.00",
+        "rate": "4.6",
+        "image": "clothe8.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 29,
+              "size": "M"
+            },
+            {
+              "id": 30,
+              "size": "L"
+            },
+            {
+              "id": 31,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 27,
+              "color": "black"
+            },
+            {
+              "id": 28,
+              "color": "grey"
+            },
+            {
+              "id": 29,
+              "color": "blue"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:37:20.000000Z",
     "updated_at": "2024-09-11T01:37:20.000000Z"
   },
@@ -272,6 +1134,160 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 2,
+        "name": "Slim Fit Jeans",
+        "description": "Stylish slim fit jeans with a modern design.",
+        "category": "clothing",
+        "price": "1200.00",
+        "rate": "4.5",
+        "image": "clothe2.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 5,
+              "size": "M"
+            },
+            {
+              "id": 6,
+              "size": "L"
+            },
+            {
+              "id": 7,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 5,
+              "color": "blue"
+            },
+            {
+              "id": 6,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 4,
+        "name": "Denim Jacket",
+        "description": "A classic denim jacket with a versatile style.",
+        "category": "clothing",
+        "price": "1400.00",
+        "rate": "4.3",
+        "image": "clothe4.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 11,
+              "size": "S"
+            },
+            {
+              "id": 12,
+              "size": "M"
+            },
+            {
+              "id": 13,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 10,
+              "color": "blue"
+            },
+            {
+              "id": 11,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 7,
+        "name": "Button-Up Shirt",
+        "description": "A formal button-up shirt suitable for business occasions.",
+        "category": "clothing",
+        "price": "900.00",
+        "rate": "4.4",
+        "image": "clothe7.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 26,
+              "size": "S"
+            },
+            {
+              "id": 27,
+              "size": "M"
+            },
+            {
+              "id": 28,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 24,
+              "color": "white"
+            },
+            {
+              "id": 25,
+              "color": "orange"
+            },
+            {
+              "id": 26,
+              "color": "grey"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 8,
+        "name": "Track Suit",
+        "description": "A cozy track suit ideal for workouts or casual wear.",
+        "category": "clothing",
+        "price": "1600.00",
+        "rate": "4.6",
+        "image": "clothe8.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 29,
+              "size": "M"
+            },
+            {
+              "id": 30,
+              "size": "L"
+            },
+            {
+              "id": 31,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 27,
+              "color": "black"
+            },
+            {
+              "id": 28,
+              "color": "grey"
+            },
+            {
+              "id": 29,
+              "color": "blue"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:40:46.000000Z",
     "updated_at": "2024-09-11T01:40:46.000000Z"
   },
@@ -314,6 +1330,196 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 1,
+        "name": "Basic T-Shirt",
+        "description": "A comfortable cotton T-shirt available in various colors.",
+        "category": "clothing",
+        "price": "250.00",
+        "rate": "4.2",
+        "image": "clothe1.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 1,
+              "size": "S"
+            },
+            {
+              "id": 2,
+              "size": "M"
+            },
+            {
+              "id": 3,
+              "size": "L"
+            },
+            {
+              "id": 4,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 1,
+              "color": "red"
+            },
+            {
+              "id": 2,
+              "color": "blue"
+            },
+            {
+              "id": 3,
+              "color": "green"
+            },
+            {
+              "id": 4,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 3,
+        "name": "Summer Dress",
+        "description": "A light and breezy summer dress perfect for the beach.",
+        "category": "clothing",
+        "price": "950.00",
+        "rate": "4.7",
+        "image": "clothe3.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 8,
+              "size": "S"
+            },
+            {
+              "id": 9,
+              "size": "M"
+            },
+            {
+              "id": 10,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 7,
+              "color": "yellow"
+            },
+            {
+              "id": 8,
+              "color": "pink"
+            },
+            {
+              "id": 9,
+              "color": "blue"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 4,
+        "name": "Denim Jacket",
+        "description": "A classic denim jacket with a versatile style.",
+        "category": "clothing",
+        "price": "1400.00",
+        "rate": "4.3",
+        "image": "clothe4.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 11,
+              "size": "S"
+            },
+            {
+              "id": 12,
+              "size": "M"
+            },
+            {
+              "id": 13,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 10,
+              "color": "blue"
+            },
+            {
+              "id": 11,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 5,
+        "name": "Polo Shirt",
+        "description": "A polo shirt made from high-quality fabric.",
+        "category": "clothing",
+        "price": "600.00",
+        "rate": "4.0",
+        "image": "clothe5.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 14,
+              "size": "M"
+            },
+            {
+              "id": 15,
+              "size": "L"
+            },
+            {
+              "id": 16,
+              "size": "XL"
+            },
+            {
+              "id": 17,
+              "size": "S"
+            },
+            {
+              "id": 18,
+              "size": "M"
+            },
+            {
+              "id": 19,
+              "size": "L"
+            },
+            {
+              "id": 20,
+              "size": "S"
+            },
+            {
+              "id": 21,
+              "size": "M"
+            },
+            {
+              "id": 22,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 12,
+              "color": "green"
+            },
+            {
+              "id": 19,
+              "color": "violet"
+            },
+            {
+              "id": 20,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:41:41.000000Z",
     "updated_at": "2024-09-11T01:41:41.000000Z"
   },
@@ -356,6 +1562,184 @@
       ],
       "flavors": []
     },
+    "related_products": [
+      {
+        "id": 2,
+        "name": "Slim Fit Jeans",
+        "description": "Stylish slim fit jeans with a modern design.",
+        "category": "clothing",
+        "price": "1200.00",
+        "rate": "4.5",
+        "image": "clothe2.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 5,
+              "size": "M"
+            },
+            {
+              "id": 6,
+              "size": "L"
+            },
+            {
+              "id": 7,
+              "size": "XL"
+            }
+          ],
+          "colors": [
+            {
+              "id": 5,
+              "color": "blue"
+            },
+            {
+              "id": 6,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 4,
+        "name": "Denim Jacket",
+        "description": "A classic denim jacket with a versatile style.",
+        "category": "clothing",
+        "price": "1400.00",
+        "rate": "4.3",
+        "image": "clothe4.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 11,
+              "size": "S"
+            },
+            {
+              "id": 12,
+              "size": "M"
+            },
+            {
+              "id": 13,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 10,
+              "color": "blue"
+            },
+            {
+              "id": 11,
+              "color": "black"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 5,
+        "name": "Polo Shirt",
+        "description": "A polo shirt made from high-quality fabric.",
+        "category": "clothing",
+        "price": "600.00",
+        "rate": "4.0",
+        "image": "clothe5.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 14,
+              "size": "M"
+            },
+            {
+              "id": 15,
+              "size": "L"
+            },
+            {
+              "id": 16,
+              "size": "XL"
+            },
+            {
+              "id": 17,
+              "size": "S"
+            },
+            {
+              "id": 18,
+              "size": "M"
+            },
+            {
+              "id": 19,
+              "size": "L"
+            },
+            {
+              "id": 20,
+              "size": "S"
+            },
+            {
+              "id": 21,
+              "size": "M"
+            },
+            {
+              "id": 22,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 12,
+              "color": "green"
+            },
+            {
+              "id": 19,
+              "color": "violet"
+            },
+            {
+              "id": 20,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      },
+      {
+        "id": 6,
+        "name": "Sport Shorts",
+        "description": "Comfortable sport shorts suitable for various activities.",
+        "category": "clothing",
+        "price": "700.00",
+        "rate": "4.1",
+        "image": "clothe6.png",
+        "options": {
+          "sizes": [
+            {
+              "id": 23,
+              "size": "S"
+            },
+            {
+              "id": 24,
+              "size": "M"
+            },
+            {
+              "id": 25,
+              "size": "L"
+            }
+          ],
+          "colors": [
+            {
+              "id": 21,
+              "color": "black"
+            },
+            {
+              "id": 22,
+              "color": "grey"
+            },
+            {
+              "id": 23,
+              "color": "red"
+            }
+          ],
+          "flavors": []
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:42:09.000000Z",
     "updated_at": "2024-09-11T01:42:09.000000Z"
   },
@@ -381,6 +1765,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 10,
+        "name": "Bagoong",
+        "description": "A fermented shrimp paste often used as a salty condiment in Filipino dishes.",
+        "category": "edible",
+        "price": "80.00",
+        "rate": "4.3",
+        "image": "product2.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 3,
+              "flavor": "salty"
+            },
+            {
+              "id": 4,
+              "flavor": "umami"
+            }
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "name": "Banana Chips",
+        "description": "Crispy and sweet banana chips, perfect for snacking.",
+        "category": "edible",
+        "price": "100.00",
+        "rate": "4.7",
+        "image": "product3.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 5,
+              "flavor": "sweet"
+            },
+            {
+              "id": 6,
+              "flavor": "honey-glazed"
+            }
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "name": "Adobo Mix",
+        "description": "A ready-to-use mix for making the classic Filipino Adobo dish.",
+        "category": "edible",
+        "price": "50.00",
+        "rate": "4.5",
+        "image": "product4.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 7,
+              "flavor": "original"
+            },
+            {
+              "id": 8,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "name": "Longganisa",
+        "description": "A sweet and garlicky Filipino sausage made from pork.",
+        "category": "edible",
+        "price": "200.00",
+        "rate": "4.9",
+        "image": "product5.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 9,
+              "flavor": "sweet"
+            },
+            {
+              "id": 10,
+              "flavor": "garlicky"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:43:45.000000Z",
     "updated_at": "2024-09-11T01:43:45.000000Z"
   },
@@ -406,6 +1884,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 9,
+        "name": "Dried Mango",
+        "description": "A popular Filipino snack made from sweet, dried mango slices.",
+        "category": "edible",
+        "price": "150.00",
+        "rate": "4.8",
+        "image": "product1.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 1,
+              "flavor": "sweet"
+            },
+            {
+              "id": 2,
+              "flavor": "tangy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "name": "Adobo Mix",
+        "description": "A ready-to-use mix for making the classic Filipino Adobo dish.",
+        "category": "edible",
+        "price": "50.00",
+        "rate": "4.5",
+        "image": "product4.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 7,
+              "flavor": "original"
+            },
+            {
+              "id": 8,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "name": "Tuyo",
+        "description": "Sun-dried salted fish, commonly eaten with rice and vinegar.",
+        "category": "edible",
+        "price": "60.00",
+        "rate": "4.4",
+        "image": "product6.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 11,
+              "flavor": "salty"
+            },
+            {
+              "id": 12,
+              "flavor": "smoky"
+            }
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "name": "Chicharon",
+        "description": "Crunchy pork skin snack, seasoned and deep-fried.",
+        "category": "edible",
+        "price": "120.00",
+        "rate": "4.8",
+        "image": "product8.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 15,
+              "flavor": "original"
+            },
+            {
+              "id": 16,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:44:23.000000Z",
     "updated_at": "2024-09-11T01:44:23.000000Z"
   },
@@ -431,6 +2003,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 9,
+        "name": "Dried Mango",
+        "description": "A popular Filipino snack made from sweet, dried mango slices.",
+        "category": "edible",
+        "price": "150.00",
+        "rate": "4.8",
+        "image": "product1.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 1,
+              "flavor": "sweet"
+            },
+            {
+              "id": 2,
+              "flavor": "tangy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "name": "Adobo Mix",
+        "description": "A ready-to-use mix for making the classic Filipino Adobo dish.",
+        "category": "edible",
+        "price": "50.00",
+        "rate": "4.5",
+        "image": "product4.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 7,
+              "flavor": "original"
+            },
+            {
+              "id": 8,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "name": "Longganisa",
+        "description": "A sweet and garlicky Filipino sausage made from pork.",
+        "category": "edible",
+        "price": "200.00",
+        "rate": "4.9",
+        "image": "product5.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 9,
+              "flavor": "sweet"
+            },
+            {
+              "id": 10,
+              "flavor": "garlicky"
+            }
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "name": "Sinigang Mix",
+        "description": "A sour tamarind mix used to prepare the traditional Sinigang soup.",
+        "category": "edible",
+        "price": "45.00",
+        "rate": "4.6",
+        "image": "product7.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 13,
+              "flavor": "sour"
+            },
+            {
+              "id": 14,
+              "flavor": "mild"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:46:12.000000Z",
     "updated_at": "2024-09-11T01:46:12.000000Z"
   },
@@ -456,6 +2122,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 9,
+        "name": "Dried Mango",
+        "description": "A popular Filipino snack made from sweet, dried mango slices.",
+        "category": "edible",
+        "price": "150.00",
+        "rate": "4.8",
+        "image": "product1.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 1,
+              "flavor": "sweet"
+            },
+            {
+              "id": 2,
+              "flavor": "tangy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "name": "Bagoong",
+        "description": "A fermented shrimp paste often used as a salty condiment in Filipino dishes.",
+        "category": "edible",
+        "price": "80.00",
+        "rate": "4.3",
+        "image": "product2.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 3,
+              "flavor": "salty"
+            },
+            {
+              "id": 4,
+              "flavor": "umami"
+            }
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "name": "Banana Chips",
+        "description": "Crispy and sweet banana chips, perfect for snacking.",
+        "category": "edible",
+        "price": "100.00",
+        "rate": "4.7",
+        "image": "product3.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 5,
+              "flavor": "sweet"
+            },
+            {
+              "id": 6,
+              "flavor": "honey-glazed"
+            }
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "name": "Tuyo",
+        "description": "Sun-dried salted fish, commonly eaten with rice and vinegar.",
+        "category": "edible",
+        "price": "60.00",
+        "rate": "4.4",
+        "image": "product6.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 11,
+              "flavor": "salty"
+            },
+            {
+              "id": 12,
+              "flavor": "smoky"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:46:36.000000Z",
     "updated_at": "2024-09-11T01:46:36.000000Z"
   },
@@ -481,6 +2241,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 9,
+        "name": "Dried Mango",
+        "description": "A popular Filipino snack made from sweet, dried mango slices.",
+        "category": "edible",
+        "price": "150.00",
+        "rate": "4.8",
+        "image": "product1.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 1,
+              "flavor": "sweet"
+            },
+            {
+              "id": 2,
+              "flavor": "tangy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "name": "Banana Chips",
+        "description": "Crispy and sweet banana chips, perfect for snacking.",
+        "category": "edible",
+        "price": "100.00",
+        "rate": "4.7",
+        "image": "product3.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 5,
+              "flavor": "sweet"
+            },
+            {
+              "id": 6,
+              "flavor": "honey-glazed"
+            }
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "name": "Sinigang Mix",
+        "description": "A sour tamarind mix used to prepare the traditional Sinigang soup.",
+        "category": "edible",
+        "price": "45.00",
+        "rate": "4.6",
+        "image": "product7.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 13,
+              "flavor": "sour"
+            },
+            {
+              "id": 14,
+              "flavor": "mild"
+            }
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "name": "Chicharon",
+        "description": "Crunchy pork skin snack, seasoned and deep-fried.",
+        "category": "edible",
+        "price": "120.00",
+        "rate": "4.8",
+        "image": "product8.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 15,
+              "flavor": "original"
+            },
+            {
+              "id": 16,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:46:59.000000Z",
     "updated_at": "2024-09-11T01:46:59.000000Z"
   },
@@ -506,6 +2360,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 10,
+        "name": "Bagoong",
+        "description": "A fermented shrimp paste often used as a salty condiment in Filipino dishes.",
+        "category": "edible",
+        "price": "80.00",
+        "rate": "4.3",
+        "image": "product2.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 3,
+              "flavor": "salty"
+            },
+            {
+              "id": 4,
+              "flavor": "umami"
+            }
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "name": "Adobo Mix",
+        "description": "A ready-to-use mix for making the classic Filipino Adobo dish.",
+        "category": "edible",
+        "price": "50.00",
+        "rate": "4.5",
+        "image": "product4.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 7,
+              "flavor": "original"
+            },
+            {
+              "id": 8,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "name": "Sinigang Mix",
+        "description": "A sour tamarind mix used to prepare the traditional Sinigang soup.",
+        "category": "edible",
+        "price": "45.00",
+        "rate": "4.6",
+        "image": "product7.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 13,
+              "flavor": "sour"
+            },
+            {
+              "id": 14,
+              "flavor": "mild"
+            }
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "name": "Chicharon",
+        "description": "Crunchy pork skin snack, seasoned and deep-fried.",
+        "category": "edible",
+        "price": "120.00",
+        "rate": "4.8",
+        "image": "product8.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 15,
+              "flavor": "original"
+            },
+            {
+              "id": 16,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:47:14.000000Z",
     "updated_at": "2024-09-11T01:47:14.000000Z"
   },
@@ -531,6 +2479,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 11,
+        "name": "Banana Chips",
+        "description": "Crispy and sweet banana chips, perfect for snacking.",
+        "category": "edible",
+        "price": "100.00",
+        "rate": "4.7",
+        "image": "product3.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 5,
+              "flavor": "sweet"
+            },
+            {
+              "id": 6,
+              "flavor": "honey-glazed"
+            }
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "name": "Longganisa",
+        "description": "A sweet and garlicky Filipino sausage made from pork.",
+        "category": "edible",
+        "price": "200.00",
+        "rate": "4.9",
+        "image": "product5.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 9,
+              "flavor": "sweet"
+            },
+            {
+              "id": 10,
+              "flavor": "garlicky"
+            }
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "name": "Tuyo",
+        "description": "Sun-dried salted fish, commonly eaten with rice and vinegar.",
+        "category": "edible",
+        "price": "60.00",
+        "rate": "4.4",
+        "image": "product6.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 11,
+              "flavor": "salty"
+            },
+            {
+              "id": 12,
+              "flavor": "smoky"
+            }
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "name": "Chicharon",
+        "description": "Crunchy pork skin snack, seasoned and deep-fried.",
+        "category": "edible",
+        "price": "120.00",
+        "rate": "4.8",
+        "image": "product8.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 15,
+              "flavor": "original"
+            },
+            {
+              "id": 16,
+              "flavor": "spicy"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:47:31.000000Z",
     "updated_at": "2024-09-11T01:47:31.000000Z"
   },
@@ -556,6 +2598,100 @@
         }
       ]
     },
+    "related_products": [
+      {
+        "id": 10,
+        "name": "Bagoong",
+        "description": "A fermented shrimp paste often used as a salty condiment in Filipino dishes.",
+        "category": "edible",
+        "price": "80.00",
+        "rate": "4.3",
+        "image": "product2.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 3,
+              "flavor": "salty"
+            },
+            {
+              "id": 4,
+              "flavor": "umami"
+            }
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "name": "Longganisa",
+        "description": "A sweet and garlicky Filipino sausage made from pork.",
+        "category": "edible",
+        "price": "200.00",
+        "rate": "4.9",
+        "image": "product5.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 9,
+              "flavor": "sweet"
+            },
+            {
+              "id": 10,
+              "flavor": "garlicky"
+            }
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "name": "Tuyo",
+        "description": "Sun-dried salted fish, commonly eaten with rice and vinegar.",
+        "category": "edible",
+        "price": "60.00",
+        "rate": "4.4",
+        "image": "product6.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 11,
+              "flavor": "salty"
+            },
+            {
+              "id": 12,
+              "flavor": "smoky"
+            }
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "name": "Sinigang Mix",
+        "description": "A sour tamarind mix used to prepare the traditional Sinigang soup.",
+        "category": "edible",
+        "price": "45.00",
+        "rate": "4.6",
+        "image": "product7.png",
+        "options": {
+          "sizes": [],
+          "colors": [],
+          "flavors": [
+            {
+              "id": 13,
+              "flavor": "sour"
+            },
+            {
+              "id": 14,
+              "flavor": "mild"
+            }
+          ]
+        }
+      }
+    ],
     "created_at": "2024-09-11T01:47:51.000000Z",
     "updated_at": "2024-09-11T01:47:51.000000Z"
   }

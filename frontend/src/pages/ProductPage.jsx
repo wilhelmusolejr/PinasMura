@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 // some library
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faStar } from "@fortawesome/free-solid-svg-icons";
 
 // components
 import Navigator from "../components/Navigator";
@@ -25,6 +25,7 @@ import { addToCartAsync, addItem } from "../redux/CartSlice";
 
 import data_json from "../data/data.json";
 import ImgLoader from "../components/ImgLoader.jsx";
+import { Toast } from "flowbite-react";
 let app_stack = "frontend";
 
 export default function ProductPage() {
@@ -76,6 +77,8 @@ export default function ProductPage() {
     dispatch(addItem(data));
     navigate("/cart");
   }
+
+  console.log(product);
 
   return (
     <>
@@ -170,6 +173,16 @@ export default function ProductPage() {
               </section>
             </>
           )}
+
+          <Toast className="fixed bottom-10 right-2 w-11/12 md:bottom-10 md:right-10">
+            <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-500 dark:bg-green-800 dark:text-green-200">
+              <FontAwesomeIcon icon={faCartShopping} />
+            </div>
+            <div className="ml-3 text-sm font-normal">
+              {product.name} has been added to your cart
+            </div>
+            <Toast.Toggle />
+          </Toast>
 
           <Footer />
         </>
