@@ -10,9 +10,12 @@ import { useDispatch } from "react-redux";
 
 // redux
 import { increaseQuantity, decreaseQuantity } from "../redux/CartSlice";
+import ImgLoader from "./ImgLoader";
+import { useState } from "react";
 
 export default function CartProduct({ product }) {
   const dispatch = useDispatch();
+  const [imgLoading, setImgLoading] = useState(true);
 
   function handleIncreaseQuantity(id) {
     dispatch(increaseQuantity({ id: id }));
@@ -27,7 +30,16 @@ export default function CartProduct({ product }) {
       <div className="">
         <a href={"/product/" + product.id}>
           <div className="product-image rounded-md border bg-gray-100 p-3">
-            <img src={IMG_URL + "/" + product.image} alt="" className="h-20" />
+            <img
+              src={IMG_URL + "/" + product.image}
+              alt=""
+              className="h-20"
+              onLoad={() => {
+                setImgLoading(false);
+              }}
+            />
+
+            {imgLoading && <ImgLoader />}
           </div>
         </a>
         <div className="flex items-center justify-between p-2">

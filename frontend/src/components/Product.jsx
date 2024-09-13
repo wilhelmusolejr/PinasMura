@@ -15,9 +15,13 @@ import styles from "./Product.module.css";
 import { IMG_URL } from "../config.jsx";
 import { useDispatch } from "react-redux";
 import { addItem } from "../redux/CartSlice";
+import ImgLoader from "./ImgLoader.jsx";
+import { useState } from "react";
 
 export default function Product({ product }) {
   const dispatch = useDispatch();
+
+  const [imgLoading, setImgLoading] = useState(true);
 
   function stringCutter(str, maxLength) {
     // If the string is longer than 30 characters, cut it and add "..."
@@ -40,6 +44,7 @@ export default function Product({ product }) {
           <img
             src={IMG_URL + "/" + product.image}
             className={`${styles["image"]}`}
+            onLoad={() => setImgLoading(false)}
           />
           <div className="product-available-color absolute right-5 top-5 flex gap-2">
             {product.options.colors &&
@@ -61,6 +66,8 @@ export default function Product({ product }) {
               <FontAwesomeIcon icon={faPlus} />
             </div>
           </div>
+
+          {imgLoading && <ImgLoader />}
         </div>
       </a>
       {/* info */}

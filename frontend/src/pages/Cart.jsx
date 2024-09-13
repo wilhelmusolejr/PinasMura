@@ -11,6 +11,7 @@ import { API_URL } from "../config.jsx";
 import { useNavigate } from "react-router-dom";
 
 import { setCartItems, setLoading } from "../redux/CartSlice";
+import Loader from "../components/Loader.jsx";
 
 let app_stack = "frontend";
 
@@ -61,26 +62,25 @@ export default function Cart() {
     if (app_stack === "fullstack") {
       fetchProducts();
     } else {
-      // setProducts(data_json);
-      setLoading(false);
+      dispatch(setLoading(false));
     }
   }, [dispatch]);
 
-  // if (loading) {
-  //   return (
-  //     <>
-  //       <Navigator />
+  if (loading) {
+    return (
+      <>
+        <Navigator />
 
-  //       <div className="relative min-h-screen">
-  //         <div className="absolute left-2/4 top-2/4">
-  //           <Loader />
-  //         </div>
-  //       </div>
+        <div className="relative min-h-screen">
+          <div className="absolute left-2/4 top-2/4">
+            <Loader />
+          </div>
+        </div>
 
-  //       <Footer />
-  //     </>
-  //   );
-  // }
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>

@@ -24,11 +24,13 @@ import { useDispatch } from "react-redux";
 import { addToCartAsync, addItem } from "../redux/CartSlice";
 
 import data_json from "../data/data.json";
+import ImgLoader from "../components/ImgLoader.jsx";
 let app_stack = "frontend";
 
 export default function ProductPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate(); // Use useNavigate hook instead of Navigate component
+  const [imgLoading, setImgLoading] = useState(true);
 
   const { id } = useParams();
 
@@ -85,8 +87,16 @@ export default function ProductPage() {
         <>
           <section className="container mx-auto mt-40 p-5">
             <div className="flex flex-col justify-center gap-3 md:flex-row md:gap-5">
-              <div className="product-image flex w-full items-center justify-center rounded-xl bg-gray-100 p-10 md:w-5/12">
-                <img src={IMG_URL + "/" + product.image} alt="" />
+              <div className="product-image relative flex w-full items-center justify-center rounded-xl bg-gray-100 p-10 md:w-5/12">
+                <img
+                  src={IMG_URL + "/" + product.image}
+                  alt={product.name + " image product"}
+                  onLoad={() => {
+                    setImgLoading(false);
+                  }}
+                />
+
+                {imgLoading && <ImgLoader />}
               </div>
               <div className="product my-5 md:w-5/12">
                 <div className="mb-10 flex items-center gap-3">
