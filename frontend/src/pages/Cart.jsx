@@ -9,11 +9,8 @@ import { useEffect } from "react";
 
 import { API_URL } from "../config.jsx";
 import { useNavigate } from "react-router-dom";
-import Loader from "../components/Loader.jsx";
 
 import { setCartItems, setLoading } from "../redux/CartSlice";
-
-import data_json from "../data/data.json";
 
 let app_stack = "frontend";
 
@@ -27,8 +24,6 @@ export default function Cart() {
   const totalPrice = items?.reduce((total, item) => {
     return total + item.price * item.quantity;
   }, 0);
-
-  console.log(items);
 
   useEffect(() => {
     const fetchProducts = async () => {
