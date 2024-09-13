@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Basic T-Shirt",
-    "description": "A comfortable cotton T-shirt a...",
+    "description": "A comfortable cotton T-shirt available in various colors.",
     "category": "clothing",
     "price": "250.00",
     "rate": "4.2",
@@ -52,7 +52,7 @@
   {
     "id": 2,
     "name": "Slim Fit Jeans",
-    "description": "Stylish slim fit jeans with a ...",
+    "description": "Stylish slim fit jeans with a modern design.",
     "category": "clothing",
     "price": "1200.00",
     "rate": "4.5",
@@ -90,7 +90,7 @@
   {
     "id": 3,
     "name": "Summer Dress",
-    "description": "A light and breezy summer dres...",
+    "description": "A light and breezy summer dress perfect for the beach.",
     "category": "clothing",
     "price": "950.00",
     "rate": "4.7",
@@ -132,7 +132,7 @@
   {
     "id": 4,
     "name": "Denim Jacket",
-    "description": "A classic denim jacket with a ...",
+    "description": "A classic denim jacket with a versatile style.",
     "category": "clothing",
     "price": "1400.00",
     "rate": "4.3",
@@ -170,7 +170,7 @@
   {
     "id": 5,
     "name": "Polo Shirt",
-    "description": "A polo shirt made from high-qu...",
+    "description": "A polo shirt made from high-quality fabric.",
     "category": "clothing",
     "price": "600.00",
     "rate": "4.0",
@@ -236,7 +236,7 @@
   {
     "id": 6,
     "name": "Sport Shorts",
-    "description": "Comfortable sport shorts suita...",
+    "description": "Comfortable sport shorts suitable for various activities.",
     "category": "clothing",
     "price": "700.00",
     "rate": "4.1",
@@ -278,7 +278,7 @@
   {
     "id": 7,
     "name": "Button-Up Shirt",
-    "description": "A formal button-up shirt suita...",
+    "description": "A formal button-up shirt suitable for business occasions.",
     "category": "clothing",
     "price": "900.00",
     "rate": "4.4",
@@ -320,7 +320,7 @@
   {
     "id": 8,
     "name": "Track Suit",
-    "description": "A cozy track suit ideal for wo...",
+    "description": "A cozy track suit ideal for workouts or casual wear.",
     "category": "clothing",
     "price": "1600.00",
     "rate": "4.6",
@@ -362,7 +362,7 @@
   {
     "id": 9,
     "name": "Dried Mango",
-    "description": "A popular Filipino snack made ...",
+    "description": "A popular Filipino snack made from sweet, dried mango slices.",
     "category": "edible",
     "price": "150.00",
     "rate": "4.8",
@@ -387,7 +387,7 @@
   {
     "id": 10,
     "name": "Bagoong",
-    "description": "A fermented shrimp paste often...",
+    "description": "A fermented shrimp paste often used as a salty condiment in Filipino dishes.",
     "category": "edible",
     "price": "80.00",
     "rate": "4.3",
@@ -412,7 +412,7 @@
   {
     "id": 11,
     "name": "Banana Chips",
-    "description": "Crispy and sweet banana chips,...",
+    "description": "Crispy and sweet banana chips, perfect for snacking.",
     "category": "edible",
     "price": "100.00",
     "rate": "4.7",
@@ -437,7 +437,7 @@
   {
     "id": 12,
     "name": "Adobo Mix",
-    "description": "A ready-to-use mix for making ...",
+    "description": "A ready-to-use mix for making the classic Filipino Adobo dish.",
     "category": "edible",
     "price": "50.00",
     "rate": "4.5",
@@ -462,7 +462,7 @@
   {
     "id": 13,
     "name": "Longganisa",
-    "description": "A sweet and garlicky Filipino ...",
+    "description": "A sweet and garlicky Filipino sausage made from pork.",
     "category": "edible",
     "price": "200.00",
     "rate": "4.9",
@@ -487,7 +487,7 @@
   {
     "id": 14,
     "name": "Tuyo",
-    "description": "Sun-dried salted fish, commonl...",
+    "description": "Sun-dried salted fish, commonly eaten with rice and vinegar.",
     "category": "edible",
     "price": "60.00",
     "rate": "4.4",
@@ -512,7 +512,7 @@
   {
     "id": 15,
     "name": "Sinigang Mix",
-    "description": "A sour tamarind mix used to pr...",
+    "description": "A sour tamarind mix used to prepare the traditional Sinigang soup.",
     "category": "edible",
     "price": "45.00",
     "rate": "4.6",
@@ -537,7 +537,7 @@
   {
     "id": 16,
     "name": "Chicharon",
-    "description": "Crunchy pork skin snack, seaso...",
+    "description": "Crunchy pork skin snack, seasoned and deep-fried.",
     "category": "edible",
     "price": "120.00",
     "rate": "4.8",

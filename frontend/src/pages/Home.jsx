@@ -29,6 +29,8 @@ let app_stack = "frontend";
 export default function Home() {
   document.title = "Home | PinasMura";
 
+  console.log(API_URL);
+
   const [products, setProducts] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -52,6 +54,7 @@ export default function Home() {
         }
         const data = await response.json();
         setProducts(data);
+        console.log(data);
       } catch (error) {
         setError(error.message);
       } finally {
