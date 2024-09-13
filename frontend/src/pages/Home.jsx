@@ -168,10 +168,8 @@ export default function Home() {
                     <div className="flex items-center justify-between">
                       {/* info */}
                       <div className="product-info">
-                        <h2 className="text-xl md:text-2xl">Sweater</h2>
-                        <p className="text-xs">
-                          Lorem ipsum dolor sit amet consectetur
-                        </p>
+                        <h2 className="text-xl md:text-2xl">{product.name}</h2>
+                        <p className="text-xs">{product.description}</p>
                         {/* <p className="text-base font-semibold">₱ 1,000.00</p> */}
                       </div>
                       {/* available color */}

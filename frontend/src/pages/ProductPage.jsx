@@ -32,6 +32,7 @@ export default function ProductPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate(); // Use useNavigate hook instead of Navigate component
   const [imgLoading, setImgLoading] = useState(true);
+  const [relatedProducts, setRelatedProducts] = useState([]);
 
   const { id } = useParams();
 
@@ -68,7 +69,29 @@ export default function ProductPage() {
     }
   }, [id]);
 
-  let four_products = product?.related_products;
+  useEffect(() => {
+    if (product === null) return;
+
+    if (product.id > 8) {
+      let temp = [];
+
+      for (let i = 0; i < 4; i++) {
+        let random = Math.floor(Math.random() * (16 - 9 + 1) + 9);
+        console.log("random", random);
+        let rand_data = data_json[random - 1];
+
+        if (!temp.includes(rand_data)) {
+          temp.push(rand_data);
+        } else {
+          i--;
+        }
+
+        console.log(temp);
+      }
+
+      setRelatedProducts(temp);
+    }
+  }, [product]);
 
   function addToCart(data) {
     if (app_stack === "fullstack") {
@@ -168,7 +191,7 @@ export default function ProductPage() {
             </div>
           </section>
 
-          {four_products && (
+          {relatedProducts && (
             <>
               <div className="container mx-auto mt-32 p-5 md:mt-40">
                 <h2 className="text-2xl font-bold md:text-4xl">
@@ -178,7 +201,7 @@ export default function ProductPage() {
 
               <section className="container mx-auto my-10 px-5">
                 <ProductList>
-                  {four_products.map((product) => (
+                  {relatedProducts.map((product) => (
                     <Product key={product.id} product={product} />
                   ))}
                 </ProductList>
