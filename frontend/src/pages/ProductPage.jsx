@@ -64,6 +64,7 @@ export default function ProductPage() {
         if (product.id === parseInt(id)) {
           setProduct(product);
           setLoading(false);
+          console.log(product);
         }
       });
     }
@@ -72,12 +73,11 @@ export default function ProductPage() {
   useEffect(() => {
     if (product === null) return;
 
-    if (product.id > 8) {
-      let temp = [];
+    let temp = [];
 
+    if (product.id > 8) {
       for (let i = 0; i < 4; i++) {
         let random = Math.floor(Math.random() * (16 - 9 + 1) + 9);
-        console.log("random", random);
         let rand_data = data_json[random - 1];
 
         if (!temp.includes(rand_data)) {
@@ -85,8 +85,19 @@ export default function ProductPage() {
         } else {
           i--;
         }
+      }
 
-        console.log(temp);
+      setRelatedProducts(temp);
+    } else {
+      for (let i = 0; i < 4; i++) {
+        let random = Math.floor(Math.random() * (8 - 1 + 1) + 1);
+        let rand_data = data_json[random - 1];
+
+        if (!temp.includes(rand_data)) {
+          temp.push(rand_data);
+        } else {
+          i--;
+        }
       }
 
       setRelatedProducts(temp);
