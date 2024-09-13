@@ -13,15 +13,18 @@ import styles from "./Product.module.css";
 
 // config
 import { IMG_URL } from "../config.jsx";
+import { useDispatch } from "react-redux";
+import { addItem } from "../redux/CartSlice";
 
 export default function Product({ product }) {
+  const dispatch = useDispatch();
+
   function stringCutter(str, maxLength) {
     // If the string is longer than 30 characters, cut it and add "..."
     if (str.length > maxLength) {
       return str.slice(0, maxLength) + "...";
     }
 
-    // Return the original string if it's shorter than 30 characters
     return str;
   }
 
@@ -51,6 +54,7 @@ export default function Product({ product }) {
             className="absolute bottom-5 right-5 hidden group-hover:block"
             onClick={(e) => {
               e.preventDefault();
+              dispatch(addItem(product));
             }}
           >
             <div className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border bg-white">

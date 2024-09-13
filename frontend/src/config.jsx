@@ -6,5 +6,5 @@ if (import.meta.env.VITE_APP_ENV == "production") {
   INITIAL_URL = import.meta.env.VITE_API_LOCAL_URL;
 }
 
-export const IMG_URL = INITIAL_URL + "/storage";
+export const IMG_URL = INITIAL_URL + "/public/images";
 export const API_URL = INITIAL_URL + "/api";

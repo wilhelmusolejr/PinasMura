@@ -25,8 +25,8 @@ export default function Navigator() {
   const [loginModal, setLoginModal] = useState(false);
   const [registerModal, setRegisterModal] = useState(false);
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("wilhelmus.olejr@gmail.com");
+  const [password, setPassword] = useState("carpediem");
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const [error, setError] = useState(null);
@@ -52,7 +52,7 @@ export default function Navigator() {
       dispatch(login(userData));
       onCloseModal();
     } else {
-      setError("Invalid");
+      setError("Invalid email or password");
     }
   }
 
