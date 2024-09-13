@@ -147,7 +147,7 @@ export default function Navigator() {
             onClose={onCloseModal}
             popup
             dismissible
-            className="flex items-center justify-center"
+            className="flex items-center justify-center bg-black bg-opacity-50"
           >
             <Modal.Header />
             <Modal.Body>
@@ -227,6 +227,7 @@ export default function Navigator() {
             onClose={onCloseModal}
             popup
             dismissible
+            className="flex items-center justify-center bg-black bg-opacity-50"
           >
             <Modal.Header />
             <Modal.Body>

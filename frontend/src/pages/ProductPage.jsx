@@ -78,8 +78,6 @@ export default function ProductPage() {
     navigate("/cart");
   }
 
-  console.log(product);
-
   return (
     <>
       <Navigator />
