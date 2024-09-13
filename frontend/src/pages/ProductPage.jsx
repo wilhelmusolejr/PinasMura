@@ -78,23 +78,23 @@ export default function ProductPage() {
                   <div className="flex gap-2">
                     <FontAwesomeIcon
                       icon={faStar}
-                      className="text-yellow-500"
+                      className="text-yellow-400"
                     />
                     <FontAwesomeIcon
                       icon={faStar}
-                      className="text-yellow-500"
+                      className="text-yellow-400"
                     />
                     <FontAwesomeIcon
                       icon={faStar}
-                      className="text-yellow-500"
+                      className="text-yellow-400"
                     />
                     <FontAwesomeIcon
                       icon={faStar}
-                      className="text-yellow-500"
+                      className="text-yellow-400"
                     />
                     <FontAwesomeIcon
                       icon={faStar}
-                      className="text-yellow-500"
+                      className="text-yellow-400"
                     />
                   </div>
                   <p>{product.rate}</p>

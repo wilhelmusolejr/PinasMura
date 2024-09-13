@@ -13,7 +13,6 @@ import {
 import ProductList from "../components/ProductList";
 import Navigator from "../components/Navigator";
 import Product from "../components/Product";
-import ProductSlider from "../components/ProductSlider";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 import Heading from "../components/Heading";
@@ -23,7 +22,6 @@ import clothes1 from "../assets/clothe1.png";
 
 // config
 import { API_URL, IMG_URL } from "../config.jsx";
-import Button from "../components/Button.jsx";
 
 export default function Home() {
   document.title = "Home | PinasMura";

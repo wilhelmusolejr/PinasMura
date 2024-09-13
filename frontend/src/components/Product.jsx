@@ -64,7 +64,7 @@ export default function Product({ product }) {
         <div className="flex justify-between">
           <h2 className="text-xl font-semibold">{product.name}</h2>
           <div className="flex items-center justify-center gap-1 text-sm">
-            <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+            <FontAwesomeIcon icon={faStar} className="text-yellow-400" />
             <p>{product.rate}</p>
           </div>
         </div>
