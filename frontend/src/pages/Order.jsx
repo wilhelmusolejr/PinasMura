@@ -13,7 +13,9 @@ import { IMG_URL } from "../config.jsx";
 import Loader from "../components/Loader.jsx";
 
 export default function Order() {
-  const { items, order_number } = useSelector((state) => state.cart);
+  const { order_items: items, order_number } = useSelector(
+    (state) => state.cart,
+  );
 
   if (!items || !order_number) {
     return (

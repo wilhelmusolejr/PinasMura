@@ -91,7 +91,18 @@ export default function Navigator() {
             </div>
             <div className="account">
               {user ? (
-                <Dropdown label="My account" dismissOnClick={false} inline>
+                <Dropdown
+                  label={[
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      key="icon"
+                      className="pr-2"
+                    />,
+                    " My account",
+                  ]}
+                  dismissOnClick={false}
+                  inline
+                >
                   <Dropdown.Item>Profile</Dropdown.Item>
                   <Dropdown.Item>Order</Dropdown.Item>
                   <Dropdown.Divider />

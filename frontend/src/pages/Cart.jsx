@@ -13,6 +13,10 @@ import Loader from "../components/Loader.jsx";
 
 import { setCartItems, setLoading } from "../redux/CartSlice";
 
+import data_json from "../data/data.json";
+
+let app_stack = "frontend";
+
 export default function Cart() {
   // const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
@@ -23,6 +27,8 @@ export default function Cart() {
   const totalPrice = items?.reduce((total, item) => {
     return total + item.price * item.quantity;
   }, 0);
+
+  console.log(items);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -42,6 +48,8 @@ export default function Cart() {
 
         const data = await response.json();
 
+        console.log(data);
+
         // Map through products and set the quantity from cart
         const productsWithQuantities = data.map(({ product, quantity }) => {
           return { ...product, quantity };
@@ -55,24 +63,29 @@ export default function Cart() {
       }
     };
 
-    fetchProducts();
+    if (app_stack === "fullstack") {
+      fetchProducts();
+    } else {
+      // setProducts(data_json);
+      setLoading(false);
+    }
   }, [dispatch]);
 
-  if (loading) {
-    return (
-      <>
-        <Navigator />
+  // if (loading) {
+  //   return (
+  //     <>
+  //       <Navigator />
 
-        <div className="relative min-h-screen">
-          <div className="absolute left-2/4 top-2/4">
-            <Loader />
-          </div>
-        </div>
+  //       <div className="relative min-h-screen">
+  //         <div className="absolute left-2/4 top-2/4">
+  //           <Loader />
+  //         </div>
+  //       </div>
 
-        <Footer />
-      </>
-    );
-  }
+  //       <Footer />
+  //     </>
+  //   );
+  // }
 
   return (
     <>

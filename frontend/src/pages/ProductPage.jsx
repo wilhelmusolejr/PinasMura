@@ -21,7 +21,10 @@ import { API_URL, IMG_URL } from "../config.jsx";
 import { useDispatch } from "react-redux";
 
 // redux
-import { addToCartAsync } from "../redux/CartSlice";
+import { addToCartAsync, addItem } from "../redux/CartSlice";
+
+import data_json from "../data/data.json";
+let app_stack = "frontend";
 
 export default function ProductPage() {
   const dispatch = useDispatch();
@@ -50,13 +53,25 @@ export default function ProductPage() {
       }
     };
 
-    fetchProducts();
+    if (app_stack === "fullstack") {
+      fetchProducts();
+    } else {
+      data_json.forEach((product) => {
+        if (product.id === parseInt(id)) {
+          setProduct(product);
+          setLoading(false);
+        }
+      });
+    }
   }, [id]);
 
   let four_products = product?.related_products;
 
   function addToCart(data) {
-    dispatch(addToCartAsync(data));
+    if (app_stack === "fullstack") {
+      dispatch(addToCartAsync(data));
+    }
+    dispatch(addItem(data));
     navigate("/cart");
   }
 

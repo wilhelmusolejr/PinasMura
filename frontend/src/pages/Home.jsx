@@ -20,8 +20,12 @@ import Heading from "../components/Heading";
 import { Carousel } from "flowbite-react";
 import clothes1 from "../assets/clothe1.png";
 
+import data_json from "../data/data.json";
+
 // config
 import { API_URL, IMG_URL } from "../config.jsx";
+
+let app_stack = "frontend";
 
 export default function Home() {
   document.title = "Home | PinasMura";
@@ -56,7 +60,12 @@ export default function Home() {
       }
     };
 
-    fetchProducts();
+    if (app_stack === "fullstack") {
+      fetchProducts();
+    } else {
+      setProducts(data_json);
+      setLoading(false);
+    }
   }, []);
 
   return (

@@ -9,7 +9,8 @@ import { useState } from "react";
 // API
 import { useNavigate } from "react-router-dom";
 
-import { submitOrderAsync } from "../redux/CartSlice";
+import { submitOrderAsync, submitOrder } from "../redux/CartSlice";
+let app_stack = "frontend";
 
 export default function CheckOut() {
   const [name, setName] = useState("");
@@ -41,7 +42,14 @@ export default function CheckOut() {
       }),
     };
 
-    dispatch(submitOrderAsync(order));
+    if (app_stack === "fullstack") {
+      dispatch(submitOrderAsync(order));
+    }
+
+    dispatch(
+      submitOrder({ id: Math.floor(Math.random() * (9999 - 5000 + 1)) + 5000 }),
+    );
+
     navigate("/order");
   }
 

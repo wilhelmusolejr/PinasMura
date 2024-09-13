@@ -1,0 +1,97 @@
+[
+  {
+    "id": 10,
+    "user_id": 1,
+    "product_id": 5,
+    "quantity": 1,
+    "created_at": "2024-09-12T11:41:31.000000Z",
+    "updated_at": "2024-09-12T11:41:31.000000Z",
+    "product": {
+      "id": 5,
+      "name": "Polo Shirt",
+      "description": "A polo shirt made from high-quality fabric.",
+      "category": "clothing",
+      "price": "600.00",
+      "rate": "4.0",
+      "image": "clothe5.png",
+      "created_at": "2024-09-11T01:37:20.000000Z",
+      "updated_at": "2024-09-11T01:37:20.000000Z"
+    }
+  },
+  {
+    "id": 11,
+    "user_id": 1,
+    "product_id": 7,
+    "quantity": 1,
+    "created_at": "2024-09-13T00:01:55.000000Z",
+    "updated_at": "2024-09-13T00:01:55.000000Z",
+    "product": {
+      "id": 7,
+      "name": "Button-Up Shirt",
+      "description": "A formal button-up shirt suitable for business occasions.",
+      "category": "clothing",
+      "price": "900.00",
+      "rate": "4.4",
+      "image": "clothe7.png",
+      "created_at": "2024-09-11T01:41:41.000000Z",
+      "updated_at": "2024-09-11T01:41:41.000000Z"
+    }
+  },
+  {
+    "id": 12,
+    "user_id": 1,
+    "product_id": 4,
+    "quantity": 1,
+    "created_at": "2024-09-13T00:02:30.000000Z",
+    "updated_at": "2024-09-13T00:02:30.000000Z",
+    "product": {
+      "id": 4,
+      "name": "Denim Jacket",
+      "description": "A classic denim jacket with a versatile style.",
+      "category": "clothing",
+      "price": "1400.00",
+      "rate": "4.3",
+      "image": "clothe4.png",
+      "created_at": "2024-09-11T01:36:34.000000Z",
+      "updated_at": "2024-09-11T01:36:34.000000Z"
+    }
+  },
+  {
+    "id": 13,
+    "user_id": 1,
+    "product_id": 1,
+    "quantity": 1,
+    "created_at": "2024-09-13T00:03:47.000000Z",
+    "updated_at": "2024-09-13T00:03:47.000000Z",
+    "product": {
+      "id": 1,
+      "name": "Basic T-Shirt",
+      "description": "A comfortable cotton T-shirt available in various colors.",
+      "category": "clothing",
+      "price": "250.00",
+      "rate": "4.2",
+      "image": "clothe1.png",
+      "created_at": "2024-09-11T01:04:01.000000Z",
+      "updated_at": "2024-09-11T01:04:01.000000Z"
+    }
+  },
+  {
+    "id": 14,
+    "user_id": 1,
+    "product_id": 12,
+    "quantity": 1,
+    "created_at": "2024-09-13T02:41:41.000000Z",
+    "updated_at": "2024-09-13T02:41:41.000000Z",
+    "product": {
+      "id": 12,
+      "name": "Adobo Mix",
+      "description": "A ready-to-use mix for making the classic Filipino Adobo dish.",
+      "category": "edible",
+      "price": "50.00",
+      "rate": "4.5",
+      "image": "product4.png",
+      "created_at": "2024-09-11T01:46:36.000000Z",
+      "updated_at": "2024-09-11T01:46:36.000000Z"
+    }
+  }
+]
