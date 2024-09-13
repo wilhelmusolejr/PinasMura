@@ -21,6 +21,7 @@ export default function ProductSlider() {
           <div className="product-color h-3 w-3 rounded-full bg-violet-500"></div>
         </div>
       </div>
+
       <div className="product-image mx-auto flex max-w-md p-10">
         <img src={product} alt="" className="" />
       </div>
