@@ -83,12 +83,12 @@ export default function Home() {
       <Navigator />
 
       <header className="container mx-auto mb-10 mt-32 flex min-h-60 flex-col justify-center px-5">
-        <Heading className="pb-2 md:pb-5">
+        <h1 className="pb-2 text-3xl font-bold md:pb-5 md:text-6xl">
           Mura sa Pinas!{" "}
           <span role="img" aria-label=":grinning_face_with_big_eyes:">
             😃
           </span>
-        </Heading>
+        </h1>
 
         <p className="w-full text-base font-normal text-gray-700 md:w-4/5 lg:w-3/5">
           {`Looking for affordable Philippine products? PinasMura offers a variety of essentials and unique finds that showcase Filipino craftsmanship. Shop now and discover great deals without breaking the bank.`}
