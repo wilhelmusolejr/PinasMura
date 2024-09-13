@@ -78,6 +78,8 @@ export default function ProductPage() {
     navigate("/cart");
   }
 
+  document.title = product?.name + " | PinasMura";
+
   return (
     <>
       <Navigator />
@@ -100,7 +102,7 @@ export default function ProductPage() {
                 {imgLoading && <ImgLoader />}
               </div>
               <div className="product my-5 md:w-5/12">
-                <div className="mb-10 flex items-center gap-3">
+                <div className="mb-5 flex items-center gap-3">
                   <div className="flex gap-2">
                     <FontAwesomeIcon
                       icon={faStar}
@@ -126,21 +128,33 @@ export default function ProductPage() {
                   <p>{product.rate}</p>
                 </div>
 
-                <Heading className="md:pb-5">{product.name}</Heading>
+                <h1 className="my-5 text-3xl font-bold md:text-4xl lg:text-5xl">
+                  {product.name}
+                </h1>
 
                 <p>{product.description}</p>
 
-                <div className="my-5 flex flex-col gap-2">
-                  <div className="flex gap-1">
-                    <p>Selected color:</p>
-                    <p>Light Quartz Gray</p>
+                <h2 className="my-5 text-base font-medium">
+                  ₱ {product.price}
+                </h2>
+
+                {product.options.colors && (
+                  <div className="my-5 flex flex-col gap-2">
+                    <div className="flex gap-1">
+                      <p>Selected color:</p>
+                      <p>Light Quartz Gray</p>
+                    </div>
+                    <div className="flex gap-2">
+                      {product.options.colors.map((color) => (
+                        <ProductColorIndicator
+                          key={color.id}
+                          size={"5"}
+                          className={`bg-${color.color}-500`}
+                        />
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex gap-2">
-                    <ProductColorIndicator className="bg-orange-500" />
-                    <ProductColorIndicator className="bg-red-500" />
-                    <ProductColorIndicator className="bg-blue-500" />
-                  </div>
-                </div>
+                )}
 
                 <Button
                   className="my-5"

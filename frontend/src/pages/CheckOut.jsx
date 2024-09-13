@@ -26,6 +26,8 @@ export default function CheckOut() {
     return total + item.price * item.quantity;
   }, 0);
 
+  document.title = `Checkout P${totalPrice} | PinasMuna`;
+
   function handleSubmit(e) {
     e.preventDefault();
 

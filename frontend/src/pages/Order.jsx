@@ -33,6 +33,8 @@ export default function Order() {
     );
   }
 
+  document.title = `Thank you! - Order #${order_number} | PinasMuna`;
+
   return (
     <>
       {/* confetti */}

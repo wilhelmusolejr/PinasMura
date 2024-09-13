@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-export default function Heading({ children, className = "" }) {
+export default function Heading({ children, className = "", size = "4xl" }) {
   return (
-    <h1 className={`${className} text-4xl font-bold md:text-6xl`}>
+    <h1 className={`${className} text-${size} font-bold md:text-6xl`}>
       {children}
     </h1>
   );
@@ -11,4 +11,5 @@ export default function Heading({ children, className = "" }) {
 Heading.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  size: PropTypes.string,
 };

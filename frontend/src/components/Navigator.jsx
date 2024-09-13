@@ -10,6 +10,11 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Button from "./Button";
 
+import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
+import logo2 from "../assets/logo2.png";
+import logo3 from "../assets/logo3.png";
+
 import { Checkbox, Dropdown, Label, Modal, TextInput } from "flowbite-react";
 
 import { login, logout } from "../redux/AuthSlice";
@@ -63,7 +68,10 @@ export default function Navigator() {
           className={`${isMenuOpen ? "flex-col" : "flex-row items-center"} container mx-auto flex justify-between px-5`}
         >
           <div className="logo text-xl font-semibold">
-            <a href="/">PinasMura</a>
+            {/* <a href="/">PinasMura</a> */}
+            <a href="/">
+              <img src={logo3} alt="" className="h-10" />
+            </a>
           </div>
 
           <ul

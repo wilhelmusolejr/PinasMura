@@ -66,6 +66,10 @@ export default function Cart() {
     }
   }, [dispatch]);
 
+  useEffect(() => {
+    document.title = `Cart (${items.length}) | PinasMuna`;
+  }, [items.length]);
+
   if (loading) {
     return (
       <>

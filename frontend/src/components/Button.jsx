@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 export default function Button({
   children,
   className = "",
-  color = "orange",
+  color = "blue",
   onClick = () => {},
 }) {
   return (
     <>
       <button
         onClick={onClick}
-        className={`${className} rounded-xl bg-${color}-500 px-5 py-3 text-white`}
+        className={`${className} rounded-xl bg-${color}-700 px-5 py-3 text-white`}
       >
         {children}
       </button>

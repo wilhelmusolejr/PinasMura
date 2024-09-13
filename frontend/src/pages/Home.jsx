@@ -83,12 +83,10 @@ export default function Home() {
       <Navigator />
 
       <header className="container mx-auto mb-10 mt-32 flex min-h-60 flex-col justify-center px-5">
-        <Heading className="pb-2 md:pb-5">Get Inspired</Heading>
+        <Heading className="pb-2 md:pb-5">Mura sa Pinas!</Heading>
 
-        <p className="w-full text-base font-medium md:w-4/5 lg:w-3/5">
-          {`Browsing for your next long-haul trip, everyday journey, or just fancy
-        a look at what's new? From community favourites to about-to-sell-out
-        items, see them all here!`}
+        <p className="w-full text-base font-normal text-gray-700 md:w-4/5 lg:w-3/5">
+          {`Looking for affordable Philippine products? PinasMura offers a variety of essentials and unique finds that showcase Filipino craftsmanship. Shop now and discover great deals without breaking the bank.`}
         </p>
       </header>
 
@@ -227,10 +225,8 @@ export default function Home() {
                     <div className="flex items-center justify-between">
                       {/* info */}
                       <div className="product-info">
-                        <h2 className="text-xl md:text-2xl">Sweater</h2>
-                        <p className="text-xs">
-                          Lorem ipsum dolor sit amet consectetur
-                        </p>
+                        <h2 className="text-xl md:text-2xl">{product.name}</h2>
+                        <p className="text-xs">{product.description}</p>
                         {/* <p className="text-base font-semibold">₱ 1,000.00</p> */}
                       </div>
                       {/* available color */}
