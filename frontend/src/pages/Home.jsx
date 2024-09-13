@@ -18,7 +18,6 @@ import Loader from "../components/Loader";
 import Heading from "../components/Heading";
 
 import { Carousel } from "flowbite-react";
-import clothes1 from "../assets/clothe1.png";
 
 import data_json from "../data/data.json";
 
@@ -67,6 +66,14 @@ export default function Home() {
       setLoading(false);
     }
   }, []);
+
+  if (error) {
+    return (
+      <div className="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4">
+        {error}
+      </div>
+    );
+  }
 
   return (
     <>
@@ -135,26 +142,6 @@ export default function Home() {
                 <Product key={product.id} product={product} />
               ))}
             </ProductList>
-          </section>
-
-          <section className="container mx-auto my-40 hidden px-5">
-            <div className="flex flex-wrap gap-3 md:flex-nowrap lg:gap-5">
-              {/* product slider */}
-              {/* <ProductSlider /> */}
-              {clothes_set_2.map((product) => (
-                <div
-                  key={product.id}
-                  className="product-image mx-auto flex max-w-md p-10"
-                >
-                  <img src={IMG_URL + "/" + product.image} />
-                </div>
-              ))}
-              <div className="product-image mx-auto flex max-w-md p-10">
-                <img src={clothes1} alt="" className="" />
-              </div>
-              {/* product slider */}
-              {/* <ProductSlider /> */}
-            </div>
           </section>
 
           <section className="container mx-auto my-40 px-5">
