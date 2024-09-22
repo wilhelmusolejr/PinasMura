@@ -15,7 +15,6 @@ import Navigator from "../components/Navigator";
 import Product from "../components/Product";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
-import Heading from "../components/Heading";
 
 import { Carousel } from "flowbite-react";
 

@@ -4,14 +4,13 @@ import { useNavigate, useParams } from "react-router-dom";
 
 // some library
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 // components
 import Navigator from "../components/Navigator";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 import ProductColorIndicator from "../components/ProductColorIndicator";
-import Heading from "../components/Heading";
 import ProductList from "../components/ProductList";
 import Product from "../components/Product";
 import Loader from "../components/Loader";
@@ -25,7 +24,6 @@ import { addToCartAsync, addItem } from "../redux/CartSlice";
 
 import data_json from "../data/data.json";
 import ImgLoader from "../components/ImgLoader.jsx";
-import { Toast } from "flowbite-react";
 let app_stack = "frontend";
 
 export default function ProductPage() {
