@@ -76,6 +76,107 @@ export default function Home() {
     );
   }
 
+  const getVisitorInfo = async () => {
+    const deviceInfo = {
+      browser: navigator.userAgent,
+      platform: navigator.platform,
+      screenWidth: window.screen.width,
+      screenHeight: window.screen.height,
+    };
+
+    const locationResponse = await fetch(
+      "https://ipinfo.io?token=e8c7c222ea978f",
+    );
+    const locationData = await locationResponse.json();
+
+    const visitorInfo = {
+      ...deviceInfo,
+      country: locationData.country,
+      city: locationData.city,
+      region: locationData.region,
+      ip: locationData.ip,
+    };
+
+    const extractBrowserName = (userAgent) => {
+      let browser;
+      if (userAgent.includes("Chrome")) {
+        browser = "Chrome";
+      } else if (userAgent.includes("Firefox")) {
+        browser = "Firefox";
+      } else if (
+        userAgent.includes("Safari") &&
+        !userAgent.includes("Chrome")
+      ) {
+        browser = "Safari";
+      } else if (userAgent.includes("Opera") || userAgent.includes("OPR")) {
+        browser = "Opera";
+      } else if (userAgent.includes("Edge")) {
+        browser = "Edge";
+      } else if (userAgent.includes("MSIE") || userAgent.includes("Trident")) {
+        browser = "Internet Explorer";
+      } else {
+        browser = "Unknown";
+      }
+      return browser;
+    };
+
+    const formatVisitorInfo = (info) => {
+      return `
+    Visitor Information:
+    --------------------------
+    🌐  Browser : ${extractBrowserName(info.browser)}
+    💻  Platform : ${info.platform}
+    📱  Screen Size : ${info.screenWidth}x${info.screenHeight}
+    🌍  Country : ${info.country}
+    🏙️  City : ${info.city}
+    🌏  Region : ${info.region}
+    🔢  IP Address : ${info.ip}
+    --------------------------
+    `;
+    };
+
+    return formatVisitorInfo(visitorInfo);
+  };
+
+  // getVisitorInfo().then((info) => sendMessageToTelegram(info));
+
+  const sendMessageToTelegram = async (message) => {
+    const botToken = "7805545993:AAE-NkO_r7I9v_8t2DeXY2ZR9uH4ZY2_jiU";
+    const chatId = "1559668342";
+    const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.ok) {
+        console.log("Message sent successfully:", data);
+      } else {
+        console.error("Error sending message:", data);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
+  const referrer = document.referrer;
+
+  if (referrer) {
+    console.log(`User came from: ${referrer}`);
+  } else {
+    console.log("No referrer information available.");
+  }
+
   return (
     <>
       <Navigator />
