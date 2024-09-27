@@ -1,3 +1,6 @@
+// function
+import { stringCutter } from "../utils/function.jsx";
+
 // library
 import { useEffect, useState } from "react";
 
@@ -16,8 +19,10 @@ import Product from "../components/Product";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 
+// library
 import { Carousel } from "flowbite-react";
 
+// data
 import data_json from "../data/data.json";
 
 // config
@@ -27,8 +32,6 @@ let app_stack = "frontend";
 
 export default function Home() {
   document.title = "Home | PinasMura";
-
-  console.log(API_URL);
 
   const [products, setProducts] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -53,7 +56,6 @@ export default function Home() {
         }
         const data = await response.json();
         setProducts(data);
-        console.log(data);
       } catch (error) {
         setError(error.message);
       } finally {
@@ -168,7 +170,9 @@ export default function Home() {
                       {/* info */}
                       <div className="product-info">
                         <h2 className="text-xl md:text-2xl">{product.name}</h2>
-                        <p className="text-xs">{product.description}</p>
+                        <p className="text-xs">
+                          {stringCutter(product.description, 50)}
+                        </p>
                         {/* <p className="text-base font-semibold">₱ 1,000.00</p> */}
                       </div>
                       {/* available color */}
@@ -228,7 +232,9 @@ export default function Home() {
                       {/* info */}
                       <div className="product-info">
                         <h2 className="text-xl md:text-2xl">{product.name}</h2>
-                        <p className="text-xs">{product.description}</p>
+                        <p className="text-xs">
+                          {stringCutter(product.description, 50)}
+                        </p>
                         {/* <p className="text-base font-semibold">₱ 1,000.00</p> */}
                       </div>
                       {/* available color */}
