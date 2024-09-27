@@ -24,6 +24,7 @@ import { addToCartAsync, addItem } from "../redux/CartSlice";
 
 import data_json from "../data/data.json";
 import ImgLoader from "../components/ImgLoader.jsx";
+
 let app_stack = "frontend";
 
 export default function ProductPage() {

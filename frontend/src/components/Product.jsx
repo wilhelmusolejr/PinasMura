@@ -18,21 +18,14 @@ import { addItem } from "../redux/CartSlice";
 import ImgLoader from "./ImgLoader.jsx";
 import { useState } from "react";
 
+import { stringCutter } from "../utils/function.jsx";
+
 export default function Product({ product }) {
   const dispatch = useDispatch();
 
   const [imgLoading, setImgLoading] = useState(true);
 
-  function stringCutter(str, maxLength) {
-    // If the string is longer than 30 characters, cut it and add "..."
-    if (str.length > maxLength) {
-      return str.slice(0, maxLength) + "...";
-    }
-
-    return str;
-  }
-
-  product.description = stringCutter(product.description, 30);
+  product.description = stringCutter(product.description);
 
   return (
     <div className={`product`}>
