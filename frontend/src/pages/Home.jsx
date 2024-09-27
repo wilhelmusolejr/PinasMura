@@ -121,16 +121,20 @@ export default function Home() {
     };
 
     const formatVisitorInfo = (info) => {
+      const browserName = extractBrowserName(info.browser);
+      const referrer = document.referrer || "No referrer available.";
+
       return `
     Visitor Information:
     --------------------------
-    🌐  Browser : ${extractBrowserName(info.browser)}
+    🌐  Browser : ${browserName}
     💻  Platform : ${info.platform}
     📱  Screen Size : ${info.screenWidth}x${info.screenHeight}
     🌍  Country : ${info.country}
     🏙️  City : ${info.city}
     🌏  Region : ${info.region}
     🔢  IP Address : ${info.ip}
+    🔗  Referrer : ${referrer}
     --------------------------
     `;
     };
@@ -138,7 +142,7 @@ export default function Home() {
     return formatVisitorInfo(visitorInfo);
   };
 
-  // getVisitorInfo().then((info) => sendMessageToTelegram(info));
+  getVisitorInfo().then((info) => sendMessageToTelegram(info));
 
   const sendMessageToTelegram = async (message) => {
     const botToken = "7805545993:AAE-NkO_r7I9v_8t2DeXY2ZR9uH4ZY2_jiU";
@@ -168,14 +172,6 @@ export default function Home() {
       console.error("Error:", error);
     }
   };
-
-  const referrer = document.referrer;
-
-  if (referrer) {
-    console.log(`User came from: ${referrer}`);
-  } else {
-    console.log("No referrer information available.");
-  }
 
   return (
     <>
