@@ -170,9 +170,9 @@ export default function Home() {
                       {/* info */}
                       <div className="product-info">
                         <h2 className="text-xl md:text-2xl">{product.name}</h2>
-                        <p className="text-xs">
+                        {/* <p className="text-xs">
                           {stringCutter(product.description, 50)}
-                        </p>
+                        </p> */}
                         {/* <p className="text-base font-semibold">₱ 1,000.00</p> */}
                       </div>
                       {/* available color */}
@@ -232,9 +232,9 @@ export default function Home() {
                       {/* info */}
                       <div className="product-info">
                         <h2 className="text-xl md:text-2xl">{product.name}</h2>
-                        <p className="text-xs">
+                        {/* <p className="text-xs">
                           {stringCutter(product.description, 50)}
-                        </p>
+                        </p> */}
                         {/* <p className="text-base font-semibold">₱ 1,000.00</p> */}
                       </div>
                       {/* available color */}
