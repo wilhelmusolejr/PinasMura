@@ -72,34 +72,21 @@ export default function ProductPage() {
     if (product === null) return;
 
     let temp = [];
+    let maxRange = product.id > 8 ? 16 : 8;
+    let minRange = product.id > 8 ? 9 : 1;
 
-    if (product.id > 8) {
-      for (let i = 0; i < 4; i++) {
-        let random = Math.floor(Math.random() * (16 - 9 + 1) + 9);
-        let rand_data = data_json[random - 1];
+    while (temp.length < 4) {
+      let random = Math.floor(
+        Math.random() * (maxRange - minRange + 1) + minRange,
+      );
+      let rand_data = data_json[random - 1];
 
-        if (!temp.includes(rand_data)) {
-          temp.push(rand_data);
-        } else {
-          i--;
-        }
+      if (!temp.includes(rand_data)) {
+        temp.push(rand_data);
       }
-
-      setRelatedProducts(temp);
-    } else {
-      for (let i = 0; i < 4; i++) {
-        let random = Math.floor(Math.random() * (8 - 1 + 1) + 1);
-        let rand_data = data_json[random - 1];
-
-        if (!temp.includes(rand_data)) {
-          temp.push(rand_data);
-        } else {
-          i--;
-        }
-      }
-
-      setRelatedProducts(temp);
     }
+
+    setRelatedProducts(temp);
   }, [product]);
 
   function addToCart(data) {
