@@ -1,6 +1,3 @@
-// function
-import { stringCutter } from "../utils/function.jsx";
-
 // library
 import { useEffect, useState } from "react";
 
