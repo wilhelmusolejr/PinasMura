@@ -2,6 +2,8 @@ const portfolio = import.meta.env.VITE_SOCIAL_PORTFOLIO;
 const project_informaton = import.meta.env.VITE_SOCIAL_PROJECT_INFORMATION;
 const github = import.meta.env.VITE_SOCIAL_GITHUB;
 
+console.log(portfolio, project_informaton, github);
+
 export default function Footer() {
   return (
     <footer>
