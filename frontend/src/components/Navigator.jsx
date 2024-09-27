@@ -10,9 +10,6 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Button from "./Button";
 
-import logo from "../assets/logo.png";
-import logo1 from "../assets/logo1.png";
-import logo2 from "../assets/logo2.png";
 import logo3 from "../assets/logo3.png";
 
 import { Checkbox, Dropdown, Label, Modal, TextInput } from "flowbite-react";
@@ -78,13 +75,13 @@ export default function Navigator() {
             className={`nav-link-parent ${isMenuOpen ? "flex-col" : "hidden md:flex"} my-10 flex gap-3 md:my-0 md:gap-5`}
           >
             <li className="nav-item">
-              <a href="#">Shop</a>
+              <a href="/">Shop</a>
             </li>
             <li className="nav-item">
-              <a href="#">Collections</a>
+              <a href="/">Collections</a>
             </li>
             <li className="nav-item">
-              <a href="#">Explore</a>
+              <a href="/">Explore</a>
             </li>
           </ul>
 
